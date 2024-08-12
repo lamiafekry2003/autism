@@ -35,7 +35,7 @@ export default function AppPart() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }}
-        className=" max-w-sm lg:max-w-2xl ml-5 lg:ml-2 mt-4 tracking-wider">
+        className=" max-w-sm lg:max-w-2xl ml-4  mt-4 tracking-wider">
           <p className=" text-2xl text-slate-500 font-bold ">
             Autism is a free app that empowers parents to assess thier young
             childern for early signs of autism
