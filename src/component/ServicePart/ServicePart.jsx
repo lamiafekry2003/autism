@@ -1,8 +1,20 @@
+import { Link } from "react-router-dom";
+// motion
+import { motion } from 'framer-motion';
+// variants
+import {fedIn} from '../../variants';
+
+// import "./header.scss";
 export default function ServicePart() {
   return (
-    <div className="  mx-auto min-h-[550px] bg-gray-100 py-10">
+    <div className="  mx-auto min-h-[550px] bg-gray-100 p-10">
      <div className="mx-auto w-fit">
-     <div className="tracking-wider">
+     <motion.div 
+      variants={fedIn('up', 0.2)} 
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.7 }}
+     className="tracking-wider">
         <h2 className=" text-center font-bold text-2xl lg:text-4xl">
           Who We Services
         </h2>
@@ -11,62 +23,98 @@ export default function ServicePart() {
           applied Behavior analysis .ABA and Behavioral Services are provided to
           childern and adults with:
         </p>
-      </div>
-      <div className=" grid grid-cols-1 lg:grid-cols-4  sm:grid-cols-3 my-8 text-center">
-        <div className=" flex flex-col justify-center items-center mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center ">
+      </motion.div>
+      <div
+       className=" grid grid-cols-1 lg:grid-cols-4  sm:grid-cols-3 my-8 text-center">
+        <motion.div 
+        variants={fedIn('left', 0.2)} 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className=" flex flex-col justify-center items-center mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center hover:shadow-lg transition-shadow">
           <div className=" flex justify-center items-center w-10 h-10 border-2 border-blue-500 rounded-full mb-4">
             <i className="fa-solid fa-check text-blue-500 text-2xl"></i>
           </div>
           <p className=" w-full">Autism Spectrum Disorder</p>
-        </div>
-        <div className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center ">
+        </motion.div>
+        <motion.div 
+        variants={fedIn('left', 0.2)} 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }} className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center hover:shadow-lg transition-shadow">
           <div className=" flex justify-center items-center w-10 h-10 border-2 border-blue-500 rounded-full mb-4">
             <i className="fa-solid fa-check text-blue-500 text-2xl"></i>
           </div>
           <p className=" w-full">Testing Autism</p>
-        </div>
-        <div className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center ">
+        </motion.div>
+        <motion.div 
+        variants={fedIn('left', 0.2)} 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }} className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center hover:shadow-lg transition-shadow">
           <div className=" flex justify-center items-center w-10 h-10 border-2 border-blue-500 rounded-full mb-4">
             <i className="fa-solid fa-check text-blue-500 text-2xl"></i>
           </div>
           <p className=" w-full"> Communicty</p>
-        </div>
-        <div className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center ">
+        </motion.div>
+        <motion.div 
+        variants={fedIn('left', 0.2)} 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }} className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center hover:shadow-lg transition-shadow">
           <div className=" flex justify-center items-center w-10 h-10 border-2 border-blue-500 rounded-full mb-4">
             <i className="fa-solid fa-check text-blue-500 text-2xl"></i>
           </div>
           <p className=" w-full">Resources</p>
-        </div>
-        <div className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center lg:mt-4">
+        </motion.div>
+        <motion.div 
+        variants={fedIn('left', 0.2)} 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }} className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center lg:mt-4 hover:shadow-lg transition-shadow">
           <div className=" flex justify-center items-center w-10 h-10 border-2 border-blue-500 rounded-full mb-4">
             <i className="fa-solid fa-check text-blue-500 text-2xl"></i>
           </div>
           <p className=" w-full">Awaraness Videos</p>
-        </div>
-        <div className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center lg:mt-4">
+        </motion.div>
+        <motion.div 
+        variants={fedIn('left', 0.2)} 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }} className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center lg:mt-4 hover:shadow-lg transition-shadow">
           <div className=" flex justify-center items-center w-10 h-10 border-2 border-blue-500 rounded-full mb-4">
             <i className="fa-solid fa-check text-blue-500 text-2xl"></i>
           </div>
           <p className=" w-full"> Testing Using child image</p>
-        </div>
-        <div className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center lg:mt-4">
+        </motion.div>
+        <motion.div 
+        variants={fedIn('left', 0.2)} 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }} className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center lg:mt-4 hover:shadow-lg transition-shadow">
           <div className=" flex justify-center items-center w-10 h-10 border-2 border-blue-500 rounded-full mb-4">
             <i className="fa-solid fa-check text-blue-500 text-2xl"></i>
           </div>
           <p className=" w-full"> Testing Using Drowing image</p>
-        </div>
-        <div className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center lg:mt-4">
+        </motion.div>
+        <motion.div 
+        variants={fedIn('left', 0.2)} 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }} className=" flex flex-col justify-center items-center  mx-auto my-5 bg-white shadow-xl w-60 h-[150px] rounded-md text-center lg:mt-4 hover:shadow-lg transition-shadow">
           <div className=" flex justify-center items-center w-10 h-10 border-2 border-blue-500 rounded-full mb-4">
             <i className="fa-solid fa-check text-blue-500 text-2xl"></i>
           </div>
           <p className=" w-full"> Testing Using Coloring image</p>
-        </div>
+        </motion.div>
       </div>
       <div className=" flex justify-center items-center mx-auto">
+        <Link to="service">
         <button className="btn mt-2 ">
          <span className="btn-text-one">See More</span>
          <span className="btn-text-two">Great!</span>
         </button> 
+        </Link>
         </div>
      </div>
     </div>

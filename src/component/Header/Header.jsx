@@ -1,5 +1,9 @@
-// import img2  from "../../assets/image 6.png";
+
 import img2 from "../../assets/iPhone 15 Pro.png"
+// motion
+import { motion } from 'framer-motion';
+// variants
+import {fedIn} from '../../variants'
 import "./header.scss";
 
 export default function Header() {
@@ -8,14 +12,24 @@ export default function Header() {
      <div>
      <div className="h-[600px] w-[600px] bg-blue-500 absolute -top-[40%] right-0 rounded-3xl rotate-45 -z-9">
       </div>
-      <div className=" hidden lg:block order-1 lg:order-2 lg:absolute lg:top-48 lg:right-[10%] z-10">
+      <motion.div 
+         variants={fedIn('left', 0.2)} 
+         initial="hidden"
+         whileInView="show"
+         viewport={{ once: false, amount: 0.7 }}
+      className=" hidden lg:block order-1 lg:order-2 lg:absolute lg:top-48 lg:right-[10%] z-10">
             <img src={img2} alt="Autism Detection" className="object-cover max-w-lg" />
-          </div>
+          </motion.div>
      </div>
       <div className="container mx-auto px-4">
         <div className=" grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col lg:flex-row justify-between gap-5 lg:gap-10 sm:pt-0 w-full tracking-wider lg:max-w-md  sm:max-w-sm order-2 lg:order-1 relative top-10 lg:top-20 lg:left-40">
-          <div>
+          <motion.div
+          variants={fedIn('right', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          >
             <h1 className="text-3xl lg:text-6xl font-bold">Autism Detection</h1>
             <p className="mt-6 text-white lg:text-slate-500 sm:text-slate-500">
               For parents and caregivers of children aged 11 to 30 months, the
@@ -28,7 +42,7 @@ export default function Header() {
                 <span>Download</span>
               </button>
             </div>
-          </div>
+          </motion.div>
           {/* <div className=" order-1 lg:order-2"> */}
           {/* <div className=" order-1 lg:order-2 lg:absolute lg:top-40 lg:right-0 z-10">
             <img src={img2} alt="Autism Detection" className="object-cover max-w-full" />
