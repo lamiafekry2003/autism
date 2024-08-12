@@ -23,14 +23,14 @@ export default function Header() {
      </div>
       <div className="container mx-auto px-4">
         <div className=" grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col lg:flex-row justify-between gap-5 lg:gap-10 sm:pt-0 w-full tracking-wider lg:max-w-md  sm:max-w-sm order-2 lg:order-1 relative top-10 lg:top-20 lg:left-40">
+        <div className="flex flex-col lg:flex-row justify-between gap-5 lg:gap-10 sm:pt-0 w-full tracking-wider lg:max-w-md  sm:max-w-sm order-2 lg:order-1 relative top-10 lg:top-28 lg:left-40">
           <motion.div
           variants={fedIn('right', 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
           >
-            <h1 className="text-3xl lg:text-6xl font-bold">Autism Detection</h1>
+            <h1 className="text-3xl lg:text-6xl font-bold text-white lg:text-black">Autism Detection</h1>
             <p className="mt-6 text-white lg:text-slate-500 sm:text-slate-500">
               For parents and caregivers of children aged 11 to 30 months, the
               FREE app 

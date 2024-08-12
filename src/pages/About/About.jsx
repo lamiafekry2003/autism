@@ -48,7 +48,7 @@ export default function About() {
   return (
    <>
     <div className="pt-11">
-      <div className=" mx-auto  py-10 min-h-[550px] ">
+      <div className=" mx-auto  py-11 min-h-[550px] ">
       <motion.div
        variants={fedIn('up', 0.2)} 
        initial="hidden"

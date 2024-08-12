@@ -6,7 +6,7 @@ import {fedIn} from '../../variants'
 export default function Services() {
   return (
     <div className=" pt-11">
-     <div className="  mx-auto min-h-[550px] bg-gray-100 p-10">
+     <div className="  mx-auto min-h-[550px] bg-gray-100 py-11">
      <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -17,7 +17,7 @@ export default function Services() {
         <h2 className=" text-center font-bold text-2xl lg:text-4xl">
           Who We Services
         </h2>
-        <p className="text-slate-500  mt-5 text-center ml-2">
+        <p className="text-slate-500  mt-5 text-center ">
           We provide auailty behavioral services based on the principles of
           applied Behavior analysis .ABA and Behavioral Services are provided to
           childern and adults with:

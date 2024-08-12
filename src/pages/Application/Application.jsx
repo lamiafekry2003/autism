@@ -58,7 +58,7 @@ export default function Application() {
   return (
     <div className=" pt-11">
       <AppPart />
-      <div className=" mx-auto min-h-[550px] bg-gray-100 py-10">
+      <div className=" mx-auto min-h-[550px] bg-gray-100 py-11">
         <motion.div 
         variants={fedIn('left', 0.2)} 
         initial="hidden"

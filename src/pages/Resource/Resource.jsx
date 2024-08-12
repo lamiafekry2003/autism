@@ -15,7 +15,7 @@ export default function Resource() {
   console.log(data?.data?.fullData);
   return (
    <div className='pt-11'>
-     <div className="mx-auto min-h-[550px] bg-gray-100  py-10">
+     <div className="mx-auto min-h-[550px] bg-gray-100  py-11">
     <motion.div 
     variants={fedIn('up', 0.2)} 
     initial="hidden"
@@ -23,7 +23,7 @@ export default function Resource() {
     viewport={{ once: false, amount: 0.7 }}
     className="tracking-wider">
       <h2 className="text-center font-bold text-2xl lg:text-4xl">Resource</h2>
-      <p className="text-slate-500 mt-5 text-center ml-2">
+      <p className="text-slate-500 mt-5 text-center ">
         Resource provides us with links to international websites that talk
         about autism in children, its causes, and other things.
       </p>
@@ -39,8 +39,8 @@ export default function Resource() {
         key={resource?.position} className="flex">
           <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
             <div className="flex items-center gap-4">
-              <div className="border-2 w-fit rounded-[50%] p-3 border-blue-500">
-                <img src={resource?.favicon} alt="" className="h-10 w-10" />
+              <div className="border-2 w-fit rounded-[50%] p-2 border-blue-500">
+                <img src={resource?.favicon} alt="" className=" w-9 h-9 object-cover" />
               </div>
               <h2 className="text-2xl font-semibold">{resource.title}</h2>
             </div>

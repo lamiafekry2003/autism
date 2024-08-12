@@ -7,18 +7,18 @@ import {fedIn} from '../../variants';
 // import "./header.scss";
 export default function ServicePart() {
   return (
-    <div className="  mx-auto min-h-[550px] bg-gray-100 p-10">
+    <div className="  mx-auto min-h-[550px] bg-gray-100 py-11">
      <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.7 }}
+      viewport={{ once: false, amount: 0.8 }}
      className="tracking-wider">
         <h2 className=" text-center font-bold text-2xl lg:text-4xl">
           Who We Services
         </h2>
-        <p className="text-slate-500  mt-5 text-center ml-2">
+        <p className="text-slate-500  mt-5 text-center ">
           We provide auailty behavioral services based on the principles of
           applied Behavior analysis .ABA and Behavioral Services are provided to
           childern and adults with:

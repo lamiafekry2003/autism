@@ -9,7 +9,7 @@ export default function ResourcePart() {
   console.log(data?.data?.fullData);
 
   return (
-    <div className="mx-auto min-h-[550px] bg-gray-100 py-10">
+    <div className="mx-auto min-h-[550px] bg-gray-100 py-11">
       <motion.div 
       variants={fedIn('up', 0.2)} 
       initial="hidden"
@@ -24,7 +24,7 @@ export default function ResourcePart() {
       </motion.div>
       <div 
       className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-10 lg:mx-20 my-10">
-        {data?.data?.fullData?.slice(1, 4).map((resource) => (
+        {data?.data?.fullData?.slice(2, 5).map((resource) => (
           <motion.div 
           variants={fedIn('left', 0.2)} 
         initial="hidden"
@@ -32,9 +32,9 @@ export default function ResourcePart() {
         viewport={{ once: false, amount: 0.7 }}
           key={resource?.position} className="flex">
             <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-              <div className="flex items-center gap-4">
-                <div className="border-2 w-fit rounded-[50%] p-3 border-blue-500">
-                  <img src={resource?.favicon} alt="" className="h-10 w-10" />
+              <div className="flex items-center gap-5">
+                <div className="object-cover border-2  rounded-[50%]  p-2 border-blue-500">
+                  <img src={resource?.favicon} alt="" className=" w-8 h-8 object-cover" />
                 </div>
                 <h2 className="text-2xl font-semibold">{resource.title}</h2>
               </div>

@@ -5,8 +5,6 @@ $font-family_1: inherit;
 	display: inline-block;
 	border-radius: 7px;
 	border: none;
-	// background: #1875FF;
-	// color: $color_1;
 	font-family: $font-family_1;
 	text-align: center;
 	font-size: 13px;
@@ -25,16 +23,16 @@ $font-family_1: inherit;
 			position: absolute;
 			opacity: 0;
 			top: 0;
-			right: -20px;
+			right: -80px;
 			transition: 0.7s;
 		}
 	}
 	&:hover {
 		span {
-			padding-right: 3.55em;
+			padding-right:3.67em;
 			&:after {
 				opacity: 4;
-				right: 0;
+				right: 0;	
 			}
 		}
 	}

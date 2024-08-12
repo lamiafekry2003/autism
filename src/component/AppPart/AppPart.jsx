@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import {fedIn} from '../../variants'
 export default function AppPart() {
   return (
-    <div className=" mx-auto  py-10 min-h-[550px]">
+    <div className=" mx-auto  py-11 min-h-[550px]">
       <motion.div
        variants={fedIn('up', 0.2)} 
        initial="hidden"
@@ -66,7 +66,7 @@ export default function AppPart() {
               <span className="btn-text-one">Download</span>
             </div>
             {/* <span className="btn-text-one"> <img src={logo} alt="" className="w-5 text-center"/>Download</span> */}
-            <span className="btn-text-two">By Google Play</span>
+            <span className="btn-text-two ml-2">By Google Play</span>
           </button>
         </motion.div>
       </div>

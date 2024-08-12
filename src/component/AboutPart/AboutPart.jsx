@@ -7,7 +7,7 @@ import {fedIn} from '../../variants'
 import "./about.scss"
 export default function AboutPart() {
   return (
-    <div className=" mx-auto  py-10 min-h-[550px] ">
+    <div className=" mx-auto  py-11 min-h-[550px] ">
       <motion.div
        variants={fedIn('up', 0.2)} 
        initial="hidden"
@@ -32,10 +32,10 @@ export default function AboutPart() {
           />
         </motion.div>
         <motion.div 
-         variants={fedIn('left', 0.2)} 
-         initial="hidden"
-         whileInView="show"
-         viewport={{ once: false, amount: 0.7 }}
+           variants={fedIn('left',.2)} 
+           initial="hidden"
+           whileInView="show"
+           viewport={{ once: false, amount: 0.7 }}
         className=" max-w-sm lg:max-w-md ml-2 mt-4 tracking-wider">
           <p className=" text-slate-500  mt-5 mx-3">
             Autism provide ,provide a community for Autism and test for parents
