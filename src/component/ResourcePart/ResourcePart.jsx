@@ -17,7 +17,7 @@ export default function ResourcePart() {
       viewport={{ once: false, amount: 0.7 }}
       className="tracking-wider">
         <h2 className="text-center font-bold text-2xl lg:text-4xl">Resource</h2>
-        <p className="text-slate-500 mt-5 text-center ml-2">
+        <p className="text-slate-500 mt-5 text-center ">
           Resource provides us with links to international websites that talk
           about autism in children, its causes, and other things.
         </p>
