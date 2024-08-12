@@ -1,49 +1,50 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/logo (2).png"
 export default function Footer() {
   return (
-    <div className=" mx-auto  py-10 min-h-[200px] bg-blue-500">
-      <ul className="font-medium flex  justify-center  p-4 md:p-0 mt-4   md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0   ">
+    <div className=" mx-auto py-4 lg:py-10 min-h-[200px] bg-blue-500">
+      <ul className="font-medium flex  justify-center  md:p-0    md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0   ">
         <li>
-          <a
-            href="#"
+          <Link
+            to=""
             className="block py-2 px-2 text-white "
             aria-current="page"
           >
             Home
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="block py-2 px-2 text-white">
+          <Link to="about" className="block py-2 px-2 text-white">
             About
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="block py-2 px-2 text-white">
+          <Link to="service" className="block py-2 px-2 text-white">
             Services
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="block py-2 px-2 text-white">
+          <Link to="application" className="block py-2 px-2 text-white">
             App
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#" className="block py-2 px-2 text-white">
+          <Link to="resource" className="block py-2 px-2 text-white">
             Resource
-          </a>
+          </Link>
         </li>
       </ul>
      <div className=" flex flex-col justify-center items-center">
-     <div className="flex justify-center items-center my-6">
-        <div className=" flex justify-center items-center w-6 h-6 border-2 border-white rounded-full mx-3">
+     <div className="flex justify-center items-center my-2">
+        <div className=" flex justify-center items-center w-6 h-6 border-2 border-white rounded-full mx-1">
           <i className="fa-brands fa-facebook-f text-white  "></i>
         </div>
         <p className=" text-white">Follow Us On Facebook</p>
       </div>
-      <p className=" text-white ">@2024  Autism App , All Right Reserved</p>
+      <p className=" text-white my-2">@2024  Autism App , All Right Reserved</p>
       <div className=" flex justify-center items-center">
-          <img src={logo} alt="" className="h-8 mx-3" />
-          <span className=" text-2xl font-semibold whitespace-nowrap text-white my-6">
+          <img src={logo} alt="" className="h-8 " />
+          <span className=" text-2xl font-semibold whitespace-nowrap text-white my-2">
            Autism
           </span>
       </div>
