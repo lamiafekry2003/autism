@@ -93,7 +93,7 @@ export default function About() {
       </div>
     </div>
     {/* quse */}
-    <div className="container mx-auto p-10 bg-gray-100">
+    <div className="mx-auto p-10 bg-gray-100">
       <motion.div
        variants={fedIn('up', 0.2)} 
        initial="hidden"
