@@ -72,7 +72,7 @@ export default function Services() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.7 }}
-              className="flex flex-col justify-center items-center mx-auto md:mx-5  my-5 bg-white shadow-xl w-80 lg:w-96 h-[150px] rounded-md text-center hover:shadow-lg transition-shadow"
+              className="flex flex-col justify-center items-center mx-auto md-mx-5 lg:mx-5 my-5 bg-white shadow-2xl  lg:w-96 h-[150px] rounded-md text-center hover:shadow-lg transition-shadow"
             >
               {/* <div className="flex justify-center items-center w-10 h-10 border-2 border-green-600 rounded-full mb-4">
                 <i className="fa-solid fa-check text-green-500 text-2xl"></i>

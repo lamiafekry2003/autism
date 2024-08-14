@@ -24,7 +24,7 @@ export default function AppPart() {
           Download App
         </h2>
       </motion.div>
-      <div className="flex flex-wrap justify-center items-center my-5">
+      <div className="flex flex-wrap justify-center  items-center my-5">
         <motion.div
           variants={fedIn('right', 0.2)}
           initial="hidden"

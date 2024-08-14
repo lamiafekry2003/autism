@@ -24,7 +24,7 @@ export default function AboutPart() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
-          className=" mt-9 mx-auto lg:mx-5 w-fit min-w-80"
+          className=" mt-9 mx-auto lg:mx-5 w-fit max-w-80"
         >
           <img
             src={img3}
