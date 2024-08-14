@@ -11,7 +11,7 @@ import Resource from "./pages/Resource/Resource"
 function App() {
   const routs=createBrowserRouter([
     {path:"",element:<Layout></Layout>,children:[
-      {index:true,element:<Home></Home>},
+      {path:'',element:<Home></Home>},
       {path:'about',element:<About></About>},
       {path:'service',element:<Services></Services>},
       {path:'application',element:<Application></Application>},
