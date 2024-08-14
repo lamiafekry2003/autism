@@ -25,7 +25,7 @@ export default function Resource() {
         viewport={{ once: false, amount: 0.7 }}
         className="tracking-wider">
         <h2 className="text-center font-bold text-2xl lg:text-4xl">Resource</h2>
-        <p className="text-slate-500 mt-5 text-center">
+        <p className="text-slate-500 mt-5 text-center mx-2 lg:mx-0">
           Resource provides us with links to international websites that talk about autism in children, its causes, and other things.
         </p>
       </motion.div>
