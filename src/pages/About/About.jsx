@@ -288,7 +288,7 @@ export default function About() {
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }} 
         >
-          <h2 className="text-3xl font-bold text-center mb-10 mx-auto">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-center mb-10 mx-2">Frequently Asked Questions</h2>
         </motion.div>
         <div >
           {faqs.map((faq, index) => (
