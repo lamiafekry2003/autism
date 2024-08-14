@@ -107,7 +107,7 @@ export default function Application() {
       </div>
       <div className="flex flex-wrap justify-center items-center my-5">
         <motion.div
-          variants={fedIn('right', 0.2)}
+          variants={fedIn('left', 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
@@ -120,7 +120,7 @@ export default function Application() {
           />
         </motion.div>
         <motion.div
-          variants={fedIn('left', 0.2)}
+          variants={fedIn('right', 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}

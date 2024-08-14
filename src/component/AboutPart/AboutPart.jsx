@@ -7,7 +7,7 @@ import { fedIn } from "../../variants";
 import "./about.scss";
 export default function AboutPart() {
   return (
-    <div className=" mx-auto  py-11 min-h-[100vh] ">
+    <div className=" py-11 min-h-[100vh] ">
       <motion.div
         variants={fedIn("up", 0.2)}
         initial="hidden"
@@ -18,9 +18,9 @@ export default function AboutPart() {
           Welcome To Autism Web
         </h2>
       </motion.div>
-      <div className=" flex flex-wrap justify-center items-center my-4">
+      <div className=" flex flex-wrap justify-center items-center my-4 px-4mt-9 mx-auto lg:mx-5 w-full sm:w-auto max-w-[80%] lg:max-w-none">
         <motion.div
-          variants={fedIn("right", 0.2)}
+          variants={fedIn("left", 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
@@ -29,15 +29,15 @@ export default function AboutPart() {
           <img
             src={img3}
             alt=""
-            className=" w-80 lg:w-96 h-[450px]  object-cover rounded"
+            className="w-full sm:w-80 lg:w-96 h-[300px] sm:h-[450px] object-cover rounded"
           />
         </motion.div>
         <motion.div
-          variants={fedIn("left", 0.2)}
+          variants={fedIn("right", 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
-          className=" max-w-sm lg:max-w-md ml-2 mt-4 tracking-wider"
+          className="mt-4 sm:mt-0 max-w-full sm:max-w-sm lg:max-w-md  lg:ml-2 tracking-wider "
         >
           <p className=" text-slate-500 leading-8  mx-3">
             Autism provide ,provide a community for Autism and test for parents

@@ -1,20 +1,19 @@
-// import { useState } from 'react';
+
 import { useGetResource ,getResource} from '../../resource';
-// import { Pagination } from '@mui/material';
 import { motion } from 'framer-motion';
 import { fedIn } from '../../variants';
 import Loading from '../../component/Loading';
 import { Link } from 'react-router-dom';
 
 export default function Resource() {
-  // const [page, setPage] = useState(1);
-  const { data, isLoading } = useGetResource(['resource'], getResource);
+
+  const { data, isLoading } = useGetResource('resource', getResource);
 
 
 
   return (
     <div className='pt-11'>
-      <div className="mx-auto min-h-[550px] bg-gray-100 py-11">
+      <div className=" min-h-[550px] bg-gray-100 py-11 overflow-hidden px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fedIn('up', 0.2)}
           initial="hidden"
@@ -22,12 +21,12 @@ export default function Resource() {
           viewport={{ once: false, amount: 0.7 }}
           className="tracking-wider">
           <h2 className="text-center font-bold text-2xl lg:text-4xl">Resource</h2>
-          <p className="text-slate-500 mt-5 text-center mx-2 lg:mx-0">
+          <p className="text-slate-500 mt-5 text-center mx-4 sm:mx-8 lg:mx-0">
             Resource provides us with links to international websites that talk about autism in children, its causes, and other things.
           </p>
         </motion.div>
         
-        <div className="mx-10 lg:mx-20 my-10">
+        <div className="mx-2 sm:mx-8 lg:mx-20 my-10">
           {isLoading ? (
             <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <Loading />

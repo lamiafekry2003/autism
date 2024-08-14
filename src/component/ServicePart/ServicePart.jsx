@@ -15,8 +15,8 @@ export default function ServicePart() {
   ];
 
   return (
-    <div className="mx-auto min-h-[100vh] bg-gray-100 py-11">
-      <div className="mx-auto w-fit">
+    <div className="min-h-[100vh] bg-gray-100 py-11 px-4">
+      <div className="mx-auto w-full max-w-screen-lg">
         <motion.div
           variants={fedIn('up', 0.2)}
           initial="hidden"
@@ -27,12 +27,12 @@ export default function ServicePart() {
           <h2 className="text-center font-bold text-2xl lg:text-4xl">
             Services
           </h2>
-          <p className="text-slate-500 mt-5 text-center mx-2 lg:mx-0">
+          <p className="text-slate-500 mt-5 text-center">
             We provide quality behavioral services based on the principles of
             Applied Behavior Analysis (ABA) to children and adults with:
           </p>
         </motion.div>
-        <div className="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-3 my-8 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 my-8 text-center">
           {services.map((service) => (
             <motion.div
               key={service.id}
@@ -40,12 +40,12 @@ export default function ServicePart() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.7 }}
-              className="flex flex-col justify-center items-center mx-auto md-mx-5 lg:mx-5 my-5 bg-white shadow-xl w-72 h-[150px] rounded-md text-center hover:shadow-lg transition-shadow"
+              className="flex flex-col justify-center items-center  bg-white shadow-xl w-full h-[150px] rounded-md text-center hover:shadow-lg transition-shadow"
             >
               <div className="flex justify-center items-center w-10 h-10 border-2 border-green-600 rounded-full mb-4">
                 <i className="fa-solid fa-check text-green-500 text-2xl"></i>
               </div>
-              <p className="w-full">{service.text}</p>
+              <p className="px-2">{service.text}</p>
             </motion.div>
           ))}
         </div>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo (2).png"
 export default function Footer() {
   return (
-    <div className=" mx-auto py-4 lg:py-10 min-h-[200px] bg-blue-500">
+    <div className=" py-4 lg:py-10 min-h-[200px] bg-blue-500">
       <ul className="font-medium flex  justify-center  md:p-0    md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0   ">
         <li>
           <Link
