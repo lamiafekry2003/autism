@@ -13,7 +13,7 @@ export default function AppPart() {
   ];
 
   return (
-    <div className="mx-auto py-11 min-h-[550px]">
+    <div className="mx-auto py-11 min-h-[100vh]">
       <motion.div
         variants={fedIn('up', 0.2)}
         initial="hidden"
@@ -24,7 +24,7 @@ export default function AppPart() {
           Download App
         </h2>
       </motion.div>
-      <div className="flex flex-wrap justify-center items-center mt-2">
+      <div className="flex flex-wrap justify-center items-center my-5">
         <motion.div
           variants={fedIn('right', 0.2)}
           initial="hidden"
@@ -35,7 +35,7 @@ export default function AppPart() {
           <img
             src={img2}
             alt="App Preview"
-            className="lg:max-w-lg h-80 lg:h-[350px] object-cover"
+            className="lg:max-w-xl h-80 lg:h-[450px] object-cover"
           />
         </motion.div>
         <motion.div
@@ -48,14 +48,14 @@ export default function AppPart() {
           <p className="text-2xl text-slate-500 font-bold px-5 lg:px-0">
             Autism is a free app that empowers parents to assess their young children for early signs of autism
           </p>
-          <ul className="text-slate-500 list-disc my-3 px-5 lg:px-0">
+          <ul className="text-slate-500 list-disc my-3 px-5 lg:px-0 leading-8">
             {features.map((feature, index) => (
               <li key={index} className="mb-2">
                 {feature}
               </li>
             ))}
           </ul>
-          <div className="px-5 lg:px-0 flex justify-center items-center lg:flex-none">
+          <div className="px-5 lg:px-0">
           <button className="btn mt-3">
             <div className="flex justify-between items-center">
               <img src={logo} alt="Google Play Logo" className="w-4 ml-2" />

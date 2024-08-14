@@ -8,22 +8,22 @@ import "./header.scss";
 
 export default function Header() {
   return (
-    <div className="relative overflow-hidden min-h-[550px] mx-auto bg-gray-100 py-10">
+    <div className="relative overflow-hidden min-h-[100vh] mx-auto bg-gray-100 py-10">
      <div>
-     <div className="h-[600px] w-[600px] bg-blue-500 absolute -top-[40%] right-0 rounded-3xl rotate-45 -z-9">
+     <div className="h-[700px] w-[700px] bg-blue-500 absolute -top-[40%] right-0 rounded-3xl rotate-45 -z-9">
       </div>
       <motion.div 
          variants={fedIn('left', 0.2)} 
          initial="hidden"
          whileInView="show"
          viewport={{ once: false, amount: 0.7 }}
-      className=" hidden lg:block order-1 lg:order-2 lg:absolute lg:top-48 lg:right-[10%] z-10">
-            <img src={img2} alt="Autism Detection" className="object-cover max-w-lg" />
+      className=" hidden lg:block order-1 lg:order-2 lg:absolute lg:top-72 lg:right-[10%] z-10">
+            <img src={img2} alt="Autism Detection" className="object-cover max-w-xl" />
           </motion.div>
      </div>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 my-12">
         <div className=" grid grid-cols-1 lg:grid-cols-2">
-        <div className="flex flex-col lg:flex-row justify-between gap-5 lg:gap-10 sm:pt-0 w-full tracking-wider lg:max-w-md  sm:max-w-sm order-2 lg:order-1 relative top-10 lg:top-28 lg:left-40">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-10 sm:pt-0 w-full tracking-wider lg:max-w-md  sm:max-w-sm order-2 lg:order-1 relative top-10 lg:top-28 lg:left-40">
           <motion.div
           variants={fedIn('right', 0.2)}
           initial="hidden"

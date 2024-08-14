@@ -15,7 +15,7 @@ export default function ServicePart() {
   ];
 
   return (
-    <div className="mx-auto min-h-[550px] bg-gray-100 py-11">
+    <div className="mx-auto min-h-[100vh] bg-gray-100 py-11">
       <div className="mx-auto w-fit">
         <motion.div
           variants={fedIn('up', 0.2)}
