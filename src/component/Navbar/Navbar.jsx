@@ -1,6 +1,6 @@
 import { useState } from "react";
 import img1 from "../../assets/logo (2).png";
-import { NavLink } from "react-router-dom";
+import {Link, NavLink } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const handleLinkClick = () => {
@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <nav className="bg-white  w-full fixed z-40">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <NavLink
+        <Link
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
@@ -17,7 +17,7 @@ export default function Navbar() {
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Autism
           </span>
-        </NavLink>
+        </Link>
         <button
           onClick={() => setIsOpen(!isOpen)}
           data-collapse-toggle="navbar-default"
