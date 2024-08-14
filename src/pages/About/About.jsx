@@ -225,7 +225,7 @@ export default function About() {
   return (
     <div className="">
       {/* Section 1 */}
-      <div className="mx-auto py-6 lg:py-10 min-h-[50vh] lg:min-h-[100vh]">
+      <div className="mx-auto py-6 lg:py-10  lg:min-h-[100vh]">
         <div className="flex flex-col justify-center items-center relative">
           <img
             src={img}
