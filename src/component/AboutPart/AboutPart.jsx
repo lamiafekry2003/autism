@@ -48,12 +48,14 @@ export default function AboutPart() {
             Australia. The early autism detection method used in ASDetect is 83%
             accurate.
           </p>
-         <Link to="about">
-         <button className="btn mt-2 mx-3">
+         <div className="flex justify-center items-center lg:flex-none">
+         <Link to="about" >
+         <button className="btn ml-2 mt-3 ">
     <span className="btn-text-one">See More</span>
     <span className="btn-text-two">Great!</span>
 </button>
          </Link>
+         </div>
         </motion.div>
       </div>
     </div>

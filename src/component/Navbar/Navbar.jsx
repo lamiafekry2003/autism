@@ -7,7 +7,7 @@ export default function Navbar() {
       setIsOpen(false); // Close the navbar when a link is clicked
     };
   return (
-    <nav className="bg-white border-gray-200 w-full fixed z-40">
+    <nav className="bg-white  w-full fixed z-40">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <NavLink
       to=""
@@ -48,7 +48,7 @@ export default function Navbar() {
       </svg>
     </button>
     <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`} id="navbar-default">
-      <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+      <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
         <li>
           <NavLink
             exact

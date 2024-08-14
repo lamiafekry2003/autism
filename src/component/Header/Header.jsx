@@ -8,7 +8,7 @@ import "./header.scss";
 
 export default function Header() {
   return (
-    <div className="relative overflow-hidden min-h-[550px] bg-gray-100 py-10">
+    <div className="relative overflow-hidden min-h-[550px] mx-auto bg-gray-100 py-10">
      <div>
      <div className="h-[600px] w-[600px] bg-blue-500 absolute -top-[40%] right-0 rounded-3xl rotate-45 -z-9">
       </div>
@@ -43,10 +43,6 @@ export default function Header() {
               </button>
             </div>
           </motion.div>
-          {/* <div className=" order-1 lg:order-2"> */}
-          {/* <div className=" order-1 lg:order-2 lg:absolute lg:top-40 lg:right-0 z-10">
-            <img src={img2} alt="Autism Detection" className="object-cover max-w-full" />
-          </div> */}
         </div>
         </div>
       </div>

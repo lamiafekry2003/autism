@@ -41,13 +41,13 @@ export default function Footer() {
         </div>
         <p className=" text-white">Follow Us On Facebook</p>
       </div>
-      <p className=" text-white my-2">@2024  Autism App , All Right Reserved</p>
       <div className=" flex justify-center items-center">
           <img src={logo} alt="" className="h-8 " />
           <span className=" text-2xl font-semibold whitespace-nowrap text-white my-2">
            Autism
           </span>
       </div>
+      <p className=" text-white my-2">@2024  Autism App , All Right Reserved</p>
      </div>
     </div>
   );

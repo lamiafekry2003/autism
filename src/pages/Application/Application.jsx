@@ -1,14 +1,15 @@
-import AppPart from "../../component/AppPart/AppPart";
+
 import test from "../../assets/iPhone 13 Mockup.png";
-import home from "../../assets/Home.png"
-import camera from "../../assets/camera.png"
-import community from "../../assets/community.png"
-import resource from "../../assets/resource.png"
+import home from "../../assets/Home.png";
+import camera from "../../assets/camera.png";
+import community from "../../assets/community.png";
+import resource from "../../assets/resource.png";
 import Slider from "react-slick";
-// motion
 import { motion } from 'framer-motion';
-// variants
-import {fedIn} from '../../variants'
+import { fedIn } from '../../variants';
+import logo from "../../assets/logos_google-play-icon.png"
+import img2 from "../../assets/iPhone 15 Pro.png"
+
 export default function Application() {
   const settings = {
     className: "center",
@@ -45,8 +46,42 @@ export default function Application() {
       }
     ]
   };
+  const features = [
+    "For children 2 years and younger (between 11 and 30 months)",
+    "Based on research with an 83% accuracy for detecting autism",
+    "Features extensive video footage of children both with and without autism",
+    "Contains 3 age-appropriate assessments for children aged 12, 18, and 24 months",
+    "Based on world-class, rigorous research at the Olga Tennison Autism Research Centre"
+  ];
 
-  // Correctly referencing the image paths
+  const steps = [
+    {
+      number: "1",
+      title: "Sign up as a parent or caregiver",
+      description: "Enter your name, email address, and password"
+    },
+    {
+      number: "2",
+      title: "Enter your child's details",
+      description: "Your child's date of birth will prompt ASDetect to display the appropriate assessment: 12 months, 18 months, or 24 months."
+    },
+    {
+      number: "3",
+      title: "Complete an assessment",
+      description: "Watch the videos and then answer each question (mostly) or (rarely). An assessment takes between 20 and 30 minutes."
+    },
+    {
+      number: "4",
+      title: "Review your answers",
+      description: "You can watch videos again and change your answers if required."
+    },
+    {
+      number: "5",
+      title: "Submit your answers and view results",
+      description: "You will receive an on-screen result of either a (higher) or (lower) likelihood, as well as a comprehensive results email."
+    }
+  ];
+
   const screenshots = [
     { src: home, alt: "Screenshot 1" },
     { src: test, alt: "Screenshot 2" },
@@ -54,154 +89,141 @@ export default function Application() {
     { src: community, alt: "Screenshot 4" },
     { src: resource, alt: "Screenshot 5" },
   ];
- 
+
   return (
-    <div className=" pt-11">
-      <AppPart />
-      <div className=" mx-auto min-h-[550px] bg-gray-100 py-11">
-        <motion.div 
-        variants={fedIn('left', 0.2)} 
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
-        className=" ml-2 ">
-          <h2 className=" lg:ml-20 text-blue-500 px-5 mb-3 font-bold text-2xl lg:text-4xl tracking-wider">
-            Using Autism is easy
-          </h2>
+    <div className="pt-11">
+       <div className=" mx-auto min-h-[550px]  py-10">
+       <div className="mx-auto w-fit">
+     <motion.div 
+      variants={fedIn('up', 0.2)} 
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.7 }}
+     className="tracking-wider">
+        <h2 className=" text-center font-bold text-2xl lg:text-4xl">
+          Download App
+        </h2>
+      </motion.div>
+      </div>
+      <div className="flex flex-wrap justify-center items-center mt-2">
+        <motion.div
+          variants={fedIn('right', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="mt-9 mx-auto lg:mx-5 w-fit min-w-80"
+        >
+          <img
+            src={img2}
+            alt="App Preview"
+            className="lg:max-w-lg h-80 lg:h-[350px] object-cover"
+          />
         </motion.div>
-        <div 
-        className="flex flex-col lg:flex-row justify-center items-center   lg:ml-24 my-5 px-5 ">
-          <motion.ul 
+        <motion.div
+          variants={fedIn('left', 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="max-w-sm lg:max-w-2xl ml-4 mt-4 tracking-wider"
+        >
+          <p className="text-2xl text-slate-500 font-bold px-5 lg:px-0">
+            Autism is a free app that empowers parents to assess their young children for early signs of autism
+          </p>
+          <ul className="text-slate-500 list-disc my-3 px-5 lg:px-0">
+            {features.map((feature, index) => (
+              <li key={index} className="mb-2">
+                {feature}
+              </li>
+            ))}
+          </ul>
+          <div className="px-5 lg:px-0 flex justify-center items-center lg:flex-none">
+          <button className="btn mt-3">
+            <div className="flex justify-between items-center">
+              <img src={logo} alt="Google Play Logo" className="w-4 ml-2" />
+              <span className="btn-text-one">Download</span>
+            </div>
+            <span className="btn-text-two ml-2">By Google Play</span>
+          </button>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+      <div className="mx-auto min-h-[550px] bg-gray-100 py-11">
+        <motion.div 
           variants={fedIn('left', 0.2)} 
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
-          className="">
-            <li className=" tracking-wider my-5">
-              <div className="flex flex-col sm:ml-2">
-                <div className="flex items-center">
-                  <span className=" my-3 font-bold inline-flex justify-center items-center w-9 h-9 text-blue-500 rounded-full border-2 border-blue-500 hover:text-white hover:bg-blue-500 cursor-pointer">
-                    1
-                  </span>
-                  <span className="ml-4  text-blue-500 text-md lg:text-2xl">
-                    Sign up as a parent or caregiver
-                  </span>
-                </div>
-                <span className="text-slate-500 text-xs lg:text-base ml-14 lg:ml-[58px]">
-                  Enter your name, email address, and password
-                </span>
-              </div>
-            </li>
-            <hr />
-            <li className=" tracking-wider my-5">
-              <div className="flex flex-col sm:ml-2">
-                <div className="flex items-center">
-                  <span className=" my-3 font-bold  inline-flex justify-center items-center w-9 h-9 text-blue-500 rounded-full border-2 border-blue-500 hover:text-white hover:bg-blue-500 cursor-pointer">
-                    2
-                  </span>
-                  <span className="ml-4  text-blue-500 text-md lg:text-2xl">
-                    Enter your childs details
-                  </span>
-                </div>
-                <span className="text-slate-500 text-xs lg:text-base ml-14 lg:ml-[58px]">
-                  Your childs date of birth will prompt ASDetect to display the
-                  appropriate assessment: 12 months, 18 months or 24 months.
-                </span>
-              </div>
-            </li>
-            <hr />
-            <li className=" tracking-wider my-5">
-              <div className="flex flex-col sm:ml-2">
-                <div className="flex items-center">
-                  <span className=" my-3 font-bold  inline-flex justify-center items-center w-9 h-9 text-blue-500 rounded-full border-2 border-blue-500 hover:text-white hover:bg-blue-500 cursor-pointer">
-                    3
-                  </span>
-                  <span className="ml-4  text-blue-500 text-md lg:text-2xl">
-                    Complete an assessment
+          className="ml-2">
+          <h2 className="lg:ml-20 text-blue-500 px-5 mb-3 font-bold text-2xl lg:text-4xl tracking-wider">
+            Using Autism is easy
+          </h2>
+        </motion.div>
+        <div className="flex flex-col lg:flex-row justify-center items-center lg:ml-24 my-5 px-5">
+          <motion.ul 
+            variants={fedIn('left', 0.2)} 
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.7 }}>
+            {steps.map((step, index) => (
+              <li key={index} className="tracking-wider my-5">
+                <div className="flex flex-col sm:ml-2">
+                  <div className="flex items-center">
+                    <span className="my-3 font-bold inline-flex justify-center items-center w-9 h-9 text-blue-500 rounded-full border-2 border-blue-500 hover:text-white hover:bg-blue-500 cursor-pointer">
+                      {step.number}
+                    </span>
+                    <span className="ml-4 text-blue-500 text-md lg:text-2xl">
+                      {step.title}
+                    </span>
+                  </div>
+                  <span className="text-slate-500 text-xs lg:text-base ml-14 lg:ml-[58px]">
+                    {step.description}
                   </span>
                 </div>
-                <span className="text-slate-500 text-xs lg:text-base ml-14 lg:ml-[58px]">
-                  Watch the videos and then answer each question (mostly) or
-                  (rarely) An assessment takes between 20 and 30 minutes.
-                </span>
-              </div>
-            </li>
-            <hr />
-            <li className=" tracking-wider my-5">
-              <div className="flex flex-col sm:ml-2">
-                <div className="flex items-center">
-                  <span className=" my-3 font-bold  inline-flex justify-center items-center w-9 h-9 text-blue-500 rounded-full border-2 border-blue-500 hover:text-white hover:bg-blue-500 cursor-pointer">
-                    4
-                  </span>
-                  <span className="ml-4  text-blue-500 text-md lg:text-2xl">
-                    Review your answers
-                  </span>
-                </div>
-                <span className="text-slate-500 text-xs lg:text-base ml-14 lg:ml-[58px]">
-                  You can watch videos again and change your answers if
-                  required.
-                </span>
-              </div>
-            </li>
-            <hr />
-            <li className=" tracking-wider my-5">
-              <div className="flex flex-col sm:ml-2">
-                <div className="flex items-center">
-                  <span className=" my-3 font-bold  inline-flex justify-center items-center w-9 h-9 text-blue-500 rounded-full border-2 border-blue-500 hover:text-white hover:bg-blue-500 cursor-pointer">
-                    5
-                  </span>
-                  <span className="ml-4  text-blue-500 text-md lg:text-2xl">
-                    Submit your answers and view results
-                  </span>
-                </div>
-                <span className="text-slate-500 text-xs lg:text-base ml-14 lg:ml-[58px]">
-                  You all receive an on-screen result of either a (higher) or
-                  (lower) likelihood, as well as a comprehensive results email.
-                </span>
-              </div>
-            </li>
+                {index < steps.length - 1 && <hr className="mt-3"/>}
+              </li>
+            ))}
           </motion.ul>
           <motion.div 
-          variants={fedIn('right', 0.2)} 
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
-          className="flex justify-center items-center mt-9 mx-auto lg:mx-5 w-fit min-w-80">
+            variants={fedIn('right', 0.2)} 
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.7 }}
+            className="flex justify-center items-center mt-9 mx-auto lg:mx-5 w-fit min-w-80">
             <img
               src={test}
-              alt=""
-              className="  h-80 lg:h-[350px]  object-cover"
+              alt="App Preview"
+              className="h-80 lg:h-[350px] object-cover"
             />
           </motion.div>
         </div>
       </div>
-      {/* screenShot */}
-      <div className="mx-auto min-h-[550px] py-10  ">
-      <h2 className="text-blue-500 text-2xl lg:text-4xl font-bold tracking-wider text-center mb-8">
-        Autism Screenshots
-      </h2>
-      <motion.div 
-      variants={fedIn('left', 0.2)} 
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.7 }}
-      className="mx-auto w-[50%] my-4 ">
-        <Slider {...settings}>
-          {screenshots.map((screenshot, index) => (
-            <div key={index} className="grid grid-cols-1 lg:grid-cols-3">
-                <div className=" lg:flex justify-center items-center">
-                <img
-                  src={screenshot.src}
-                  alt={screenshot.alt}
-                  className="h-80 lg:h-[400px] object-cover mx-auto sm:mx-20 md:mx-20 "
-                />
+      {/* ScreenShot */}
+      <div className="mx-auto min-h-[550px] py-10">
+        <h2 className="text-blue-500 text-2xl lg:text-4xl font-bold tracking-wider text-center mb-8">
+          Autism Screenshots
+        </h2>
+        <motion.div 
+          variants={fedIn('left', 0.2)} 
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="mx-auto w-[50%] my-4">
+          <Slider {...settings}>
+            {screenshots.map((screenshot, index) => (
+              <div key={index} className="grid grid-cols-1 lg:grid-cols-3">
+                <div className="lg:flex justify-center items-center">
+                  <img
+                    src={screenshot.src}
+                    alt={screenshot.alt}
+                    className="h-80 lg:h-[400px] object-cover mx-auto sm:mx-20 md:mx-20"
+                  />
                 </div>
               </div>
-          ))}
-        </Slider>
-      </motion.div>
-    </div>
-        
+            ))}
+          </Slider>
+        </motion.div>
       </div>
+    </div>
   );
 }
