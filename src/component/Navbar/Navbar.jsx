@@ -14,7 +14,7 @@ export default function Navbar() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img src={img1} className="h-8" alt="Autism Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap ">
             Autism
           </span>
         </Link>

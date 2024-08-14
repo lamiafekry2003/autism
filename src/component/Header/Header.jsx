@@ -49,7 +49,7 @@ export default function Header() {
     //       </motion.div>
     //   </div>
     // </div>
-    <div className="relative overflow-hidden min-h-[650px]  sm:min-h-[100vh] bg-gray-100 flex justify-center items-center dark:bg-gray-950 dark:text-white duration-200 ">
+    <div className="relative overflow-hidden min-h-[650px]  sm:min-h-[100vh] bg-gray-100 flex justify-center items-center   ">
       {/* background pattern */}
       <div className="h-[700px] w-[700px] bg-blue-500 absolute  -top-[40%] right-0 rounded-3xl rotate-45 -z[8] "></div>
       {/* hero section */}
