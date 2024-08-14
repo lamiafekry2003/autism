@@ -21,7 +21,7 @@ export default function Header() {
             <img src={img2} alt="Autism Detection" className="object-cover max-w-xl" />
           </motion.div>
      </div>
-      <div className="container mx-auto px-4 my-12">
+      <div className="container mx-auto px-4 my-5 lg:my-12">
         <div className=" grid grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col lg:flex-row justify-center items-center gap-5 lg:gap-10 sm:pt-0 w-full tracking-wider lg:max-w-md  sm:max-w-sm order-2 lg:order-1 relative top-10 lg:top-28 lg:left-40">
           <motion.div

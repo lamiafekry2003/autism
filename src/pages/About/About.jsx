@@ -287,7 +287,7 @@ export default function About() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }} 
-        className=" flex justify-center items-center"
+        className=" flex justify-center items-center flex-wrap"
         >
           <h2 className="text-3xl font-bold text-center mb-10 ">Frequently Asked Questions</h2>
         </motion.div>
