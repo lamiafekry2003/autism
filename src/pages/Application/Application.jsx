@@ -199,7 +199,7 @@ export default function Application() {
         </div>
       </div>
       {/* ScreenShot */}
-      <div className="mx-auto min-h-[50vh] py-10">
+      <div className="mx-auto min-h-[100vh] py-10">
         <h2 className="text-blue-500 text-2xl lg:text-4xl font-bold tracking-wider text-center mb-8">
           Autism Screenshots
         </h2>
@@ -208,11 +208,11 @@ export default function Application() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
-          className="mx-auto w-[50%] my-10">
+          className="mx-auto w-[50%]">
           <Slider {...settings}>
             {screenshots.map((screenshot, index) => (
               <div key={index} className="grid grid-cols-1 lg:grid-cols-3">
-                <div className="lg:flex justify-center items-center">
+                <div className="lg:flex justify-center items-center my-10">
                   <img
                     src={screenshot.src}
                     alt={screenshot.alt}
