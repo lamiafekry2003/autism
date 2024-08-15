@@ -52,7 +52,7 @@ export default function About() {
           <img
             src={img}
             alt="About Background"
-            className="w-full object-cover"
+            className="w-full object-cover h-[100vh]"
           />
           <h2 className="absolute inset-0 flex justify-center items-center text-center text-3xl lg:text-7xl font-bold text-blue-500 opacity-40">
             About
