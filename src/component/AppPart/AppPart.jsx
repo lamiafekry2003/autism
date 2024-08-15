@@ -13,7 +13,7 @@ export default function AppPart() {
   ];
 
   return (
-    <div className="py-11 min-h-[100vh]">
+    <div className="py-11 min-h-[100vh] max-w-full">
       <motion.div
         variants={fedIn('up', 0.2)}
         initial="hidden"

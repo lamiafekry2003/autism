@@ -7,11 +7,11 @@ import "./header.scss";
 
 export default function Header() {
   return (
-    <div className="relative overflow-hidden min-h-[650px]  sm:min-h-[100vh] bg-gray-100 flex justify-center items-center   ">
+    <div className="relative overflow-hidden min-h-[650px] max-w-full sm:min-h-[100vh] bg-gray-100 flex justify-center items-center   ">
       {/* background pattern */}
       <div className="h-[700px] w-[700px] bg-blue-500 absolute  -top-[40%] right-0 rounded-3xl rotate-45 -z[8] "></div>
       {/* hero section */}
-      <div className="container pb-8 sm:pb-0">
+      <div className="container  mx-auto px-2 lg:px-6">
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* text content section */}
@@ -35,7 +35,7 @@ export default function Header() {
                 was launched in 2024 and has been downloaded 90,000 times
               </p>
 
-              <div className="mt-4">
+              <div className="my-4">
                 <button className=" bg-blue-500  text-white  py-2 rounded button">
                   <span>Download</span>
                 </button>
@@ -53,7 +53,7 @@ export default function Header() {
                 <img
                   src={img2}
                   alt=""
-                  className="w-[300px] h-[300px] sm:h-[450px] sm:w-[450px]  object-contain mx-auto"
+                  className="max-w-[300px] h-[300px] sm:h-[450px] sm:max-w-[450px]  object-contain mx-auto"
                 />
               </div>
             </motion.div>

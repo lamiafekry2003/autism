@@ -14,7 +14,9 @@ body{
   color: white !important;
   
 } */
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 .slick-dots li button:before {
   font-size: 10px;

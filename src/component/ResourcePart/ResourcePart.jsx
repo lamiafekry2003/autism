@@ -13,7 +13,7 @@ export default function Resource() {
 
   return (
     <div className='pt-11'>
-      <div className=" min-h-[550px] bg-gray-100 py-11 overflow-hidden px-4 sm:px-6 lg:px-8">
+      <div className=" min-h-[550px] max-w-full bg-gray-100 py-11 overflow-hidden px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fedIn('up', 0.2)}
           initial="hidden"
