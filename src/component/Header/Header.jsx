@@ -25,7 +25,7 @@ export default function Header() {
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
                 Autism Detection
               </h1>
-              <p className="text-sm max-w-lg my-4  lg:text-slate-500 sm:text-slate-500">
+              <p className="text-sm max-w-full lg:max-w-lg my-4  lg:text-slate-500 sm:text-slate-500">
                 For parents and caregivers of children aged 11 to 30 months, the
                 FREE app
                 <span className="text-blue-500 lg:text-blue-500 sm:lg:text-blue-500 ">

@@ -13,18 +13,74 @@ export default function AppPart() {
   ];
 
   return (
-    <div className="py-11 min-h-[100vh] max-w-full">
-      <motion.div
-        variants={fedIn('up', 0.2)}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
-      >
-        <h2 className="text-center font-bold text-2xl lg:text-4xl tracking-wider">
+    // <div className="py-11 min-h-[100vh] max-w-full">
+    //   <motion.div
+    //     variants={fedIn('up', 0.2)}
+    //     initial="hidden"
+    //     whileInView="show"
+    //     viewport={{ once: false, amount: 0.7 }}
+    //   >
+    //     <h2 className="text-center font-bold text-2xl lg:text-4xl tracking-wider">
+    //       Download App
+    //     </h2>
+    //   </motion.div>
+    //   <div className="flex flex-wrap justify-center  items-center my-5">
+    //     <motion.div
+    //       variants={fedIn('left', 0.2)}
+    //       initial="hidden"
+    //       whileInView="show"
+    //       viewport={{ once: false, amount: 0.7 }}
+    //       className="mt-9 mx-auto lg:mx-5 w-fit min-w-80"
+    //     >
+    //       <img
+    //         src={img2}
+    //         alt="App Preview"
+    //         className="lg:max-w-xl h-80 lg:h-[450px] object-cover"
+    //       />
+    //     </motion.div>
+    //     <motion.div
+    //       variants={fedIn('right', 0.2)}
+    //       initial="hidden"
+    //       whileInView="show"
+    //       viewport={{ once: false, amount: 0.7 }}
+    //       className="max-w-sm lg:max-w-2xl ml-4 mt-4 tracking-wider"
+    //     >
+    //       <p className="text-2xl text-slate-500 font-bold px-5 lg:px-0">
+    //         Autism is a free app that empowers parents to assess their young children for early signs of autism
+    //       </p>
+    //       <ul className="text-slate-500 list-disc my-3 px-5 lg:px-0 leading-8">
+    //         {features.map((feature, index) => (
+    //           <li key={index} className="mb-2">
+    //             {feature}
+    //           </li>
+    //         ))}
+    //       </ul>
+    //       <div className="px-5 lg:px-0">
+    //       <button className="btn mt-3">
+    //         <div className="flex justify-between items-center">
+    //           <img src={logo} alt="Google Play Logo" className="w-4 ml-2" />
+    //           <span className="btn-text-one">Download</span>
+    //         </div>
+    //         <span className="btn-text-two ml-2">By Google Play</span>
+    //       </button>
+    //       </div>
+    //     </motion.div>
+    //   </div>
+    // </div>
+    <div className=" mx-auto min-h-[100vh]  py-10">
+       <div className="mx-auto w-fit">
+     <motion.div 
+      variants={fedIn('up', 0.2)} 
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.7 }}
+     className="tracking-wider">
+        <h2 className=" text-center font-bold text-2xl lg:text-4xl">
           Download App
         </h2>
       </motion.div>
-      <div className="flex flex-wrap justify-center  items-center my-5">
+      </div>
+      <div className="flex flex-wrap justify-center items-center my-5">
         <motion.div
           variants={fedIn('left', 0.2)}
           initial="hidden"
@@ -48,14 +104,14 @@ export default function AppPart() {
           <p className="text-2xl text-slate-500 font-bold px-5 lg:px-0">
             Autism is a free app that empowers parents to assess their young children for early signs of autism
           </p>
-          <ul className="text-slate-500 list-disc my-3 px-5 lg:px-0 leading-8">
+          <ul className="text-slate-500 list-disc  my-3 px-5 lg:px-0 leading-8">
             {features.map((feature, index) => (
               <li key={index} className="mb-2">
                 {feature}
               </li>
             ))}
           </ul>
-          <div className="px-5 lg:px-0">
+          <div className="px-5 lg:px-0 md:mx-auto">
           <button className="btn mt-3">
             <div className="flex justify-between items-center">
               <img src={logo} alt="Google Play Logo" className="w-4 ml-2" />

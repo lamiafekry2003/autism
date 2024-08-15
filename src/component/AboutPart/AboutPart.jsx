@@ -71,7 +71,7 @@ import "./about.scss";
 
 export default function AboutPart() {
   return (
-    <div className="py-11 min-h-[100vh] max-w-full bg-white">
+    <div className="py-11 min-h-[100vh] max-w-full mx-auto  ">
       <motion.div
         variants={fedIn("up", 0.2)}
         initial="hidden"
@@ -102,7 +102,7 @@ export default function AboutPart() {
           viewport={{ once: false, amount: 0.7 }}
           className="mt-4 sm:mt-0 max-w-full sm:max-w-sm lg:max-w-md lg:ml-2 tracking-wider"
         >
-          <p className="text-slate-500 leading-8 mx-3">
+          <p className="text-slate-500 leading-8 mx-2">
             Autism provides a community for Autism and tests for parents and caregivers of children aged 11 to 30 months. The FREE app Autism was launched in 2024 and has been downloaded 90,000 times.
             It is based on research by the Olga Tennison Autism Research Centre at La Trobe University, Australia. The early autism detection method used in ASDetect is 83% accurate.
           </p>
