@@ -45,7 +45,7 @@ export default function About() {
   };
 
   return (
-    <div className="">
+    <div className="pt-11">
       {/* Section 1 */}
       {/* <div className="mx-auto py-6 lg:py-10   max-w-full xl:min-h-[84vh]">
         <div className="flex flex-col justify-center items-center relative">
