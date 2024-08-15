@@ -22,7 +22,7 @@ export default function Services() {
   ];
   return (
     <div className=" pt-11">
-     <div className="  mx-auto min-h-[750px] max-w-full xl:min-h-[100vh] bg-gray-100 py-11">
+     <div className="  mx-auto max-w-full  min-h-[84vh] bg-gray-100 py-11">
      <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -59,11 +59,11 @@ export default function Services() {
      </div>
     </div>
      {/* Detailed Services Section */}
-     <section className="container min-h-[750px] max-w-full xl:min-h-[100vh]: mx-auto text-center py-12">
+     <section className="container  min-h-[84vh]: mx-auto text-center py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {detailedServices.map(service => (
-            <div key={service.id} className=" p-6 flex flex-col items-center ">
-              <div className="w-12 h-12 rounded-full border-2 border-blue-500 flex items-center justify-center mb-4">
+            <div key={service.id} className=" p-3 flex flex-col items-center ">
+              <div className="w-12 h-12 rounded-full border-2 border-blue-500 flex items-center justify-center mb-2">
                 <span className="text-blue-500 text-2xl font-bold">{service.id}</span>
               </div>
                <motion.div
@@ -85,7 +85,7 @@ export default function Services() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.7 }}
-              className="text-gray-500 max-w-sm">{service.description}</motion.p>
+              className="text-gray-500 max-w-[40%]">{service.description}</motion.p>
             </div>
           ))}
         </div>

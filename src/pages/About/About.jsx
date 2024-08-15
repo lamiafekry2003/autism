@@ -1,5 +1,5 @@
 
-import img from "../../assets/image 14.png";
+// import img from "../../assets/image 14.png";
 import img3 from "../../assets/about.png";
 import { useState } from "react";
 import { motion } from 'framer-motion';
@@ -47,7 +47,7 @@ export default function About() {
   return (
     <div className="">
       {/* Section 1 */}
-      <div className="mx-auto py-6 lg:py-10   max-w-full xl:min-h-[100vh]">
+      {/* <div className="mx-auto py-6 lg:py-10   max-w-full xl:min-h-[84vh]">
         <div className="flex flex-col justify-center items-center relative">
           <img
             src={img}
@@ -59,7 +59,7 @@ export default function About() {
           </h2>
         </div>
       </div>
-      
+       */}
       {/* Section 2 */}
       {/* <div className="mx-auto mb-6 lg:mb-8 min-h-[60vh] lg:min-h-[100vh]">
         <div className="flex flex-col lg:flex-row lg:gap-12 justify-center items-center px-4 lg:px-0 ">
@@ -101,8 +101,8 @@ export default function About() {
           </div>
         </div>
       </div> */}
-      <div className="mx-auto mb-6 lg:mb-8 min-h-[60vh]  lg:min-h-[100vh]">
-  <div className="flex flex-col lg:flex-row lg:gap-12 justify-center items-center px-4 lg:px-0">
+      <div className="mx-auto mb-6 lg:mb-8  xl:min-h-[84vh]">
+  <div className="flex flex-col lg:flex-row lg:gap-12 justify-center items-center py-11 px-4 lg:px-0">
     <motion.div 
       variants={fedIn('left', 0.2)}
       initial="hidden"
@@ -142,7 +142,7 @@ export default function About() {
 </div>
 
       {/* Section 3 */}
-      <div className="mx-auto py-10 lg:px-10 min-h-[750px] max-w-full xl:min-h-[100vh] bg-gray-100">
+      <div className="mx-auto py-10 lg:px-10 min-h-[750px] max-w-full xl:min-h-[84vh] bg-gray-100">
         <motion.div
         variants={fedIn('up', 0.2)}
         initial="hidden"

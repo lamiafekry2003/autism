@@ -7,7 +7,7 @@ import "./header.scss";
 
 export default function Header() {
   return (
-    <div className="relative overflow-x-hidden sm:overflow-hidden min-h-[750px]  xl:min-h-[100vh] bg-gray-100 flex justify-center items-center   ">
+    <div className="relative overflow-x-hidden sm:overflow-hidden  lg:min-h-[100vh] bg-gray-100 flex justify-center items-center   ">
       {/* background pattern */}
       <div className="h-[700px] w-[700px] bg-blue-500 absolute  -top-[40%] right-0 rounded-3xl rotate-45 -z[8] "></div>
       {/* hero section */}
@@ -49,7 +49,7 @@ export default function Header() {
               viewport={{ once: false, amount: 0.7 }}
               className="order-1 sm:order-2 flex justify-center "
             >
-              <div className="relative z-10 mt-5 lg:mt-10 ">
+              <div className="relative z-10 mt-5 lg:mt-12 ">
                 <img
                   src={img2}
                   alt=""

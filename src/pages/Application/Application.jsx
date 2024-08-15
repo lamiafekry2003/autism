@@ -92,7 +92,7 @@ export default function Application() {
 
   return (
     <div className="pt-11 overflow-x-hidden">
-       <div className=" mx-auto min-h-[750px] max-w-full xl:min-h-[100vh]  py-10">
+       <div className=" mx-auto min-h-[84vh]  py-10">
        <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -148,7 +148,7 @@ export default function Application() {
         </motion.div>
       </div>
     </div>
-      <div className="mx-auto min-h-[750px] max-w-full xl:min-h-[100vh] bg-gray-100 py-11">
+      <div className="mx-auto min-h-[84vh] bg-gray-100 py-9">
         <motion.div 
           variants={fedIn('left', 0.2)} 
           initial="hidden"
@@ -199,7 +199,7 @@ export default function Application() {
         </div>
       </div>
       {/* ScreenShot */}
-      <div className="mx-auto min-h-[750px] max-w-full xl:min-h-[100vh] py-10">
+      <div className="mx-auto min-h-[84vh] py-10">
         <h2 className="text-blue-500 text-2xl lg:text-4xl font-bold tracking-wider text-center mb-8">
           Autism Screenshots
         </h2>

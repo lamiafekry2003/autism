@@ -14,7 +14,7 @@ export default function AppPart() {
   ];
 
   return (
-    <div className=" mx-auto min-h-[750px] overflow-x-hidden xl:min-h-[100vh] py-10">
+    <div className=" mx-auto  overflow-x-hidden gl:min-h-[84vh] py-9">
        <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -27,7 +27,7 @@ export default function AppPart() {
         </h2>
       </motion.div>
       </div>
-      <div className="flex flex-wrap lg:flex-row justify-center items-center my-5">
+      <div className="flex flex-wrap lg:flex-row justify-center items-center my-4">
         <motion.div
           variants={fedIn('left', 0.2)}
           initial="hidden"

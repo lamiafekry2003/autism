@@ -19,7 +19,7 @@ body{
 }
 
 .slick-dots li button:before {
-  font-size: 10px;
+  font-size: 12px;
 }
 .slick-dots li button:hover::before {
  color: #2b7ffd;

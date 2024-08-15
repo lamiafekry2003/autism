@@ -14,8 +14,8 @@ export default function Resource() {
   }
 
   return (
-    // <div className=' '>
-      <div className="min-h-[750px]  xl:min-h-[100vh] mx-auto bg-gray-100 py-11 overflow-x-hidden sm:overflow-hidden px-4 sm:px-6 lg:px-8">
+
+      <div className="xl:min-h-[84vh] mx-auto bg-gray-100 py-9 overflow-x-hidden sm:overflow-hidden px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fedIn('up', 0.2)}
           initial="hidden"
@@ -80,6 +80,6 @@ export default function Resource() {
           </div>
         )}
       </div>
-    // </div>
+
   );
 }

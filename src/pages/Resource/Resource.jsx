@@ -22,7 +22,7 @@ export default function Resource() {
   console.log(data?.data?.fullData);
   return (
     <div className='pt-11'>
-    <div className="mx-auto min-h-[750px] max-w-full xl:min-h-[100vh] bg-gray-100 py-11">
+    <div className="mx-auto min-h-[84vh] bg-gray-100 py-9">
       <motion.div
         variants={fedIn('up', 0.2)}
         initial="hidden"
