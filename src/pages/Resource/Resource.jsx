@@ -10,14 +10,19 @@ import Loading from '../../component/Loading';
 
 export default function Resource() {
   const [page,setPage]=useState(1)
-  const {data,isLoading} = useGetResource(['resource',page],getResourcePagination)
+  const {data,isLoading,isError,error} = useGetResource(['resource',page],getResourcePagination)
+  console.log(data)
+  if(isError){
+    <h2>{error}</h2>
+  }
+
   const handleChange = (event, value) => {
     setPage(value);
   };
   console.log(data?.data?.fullData);
   return (
     <div className='pt-11'>
-    <div className="mx-auto min-h-[100vh] bg-gray-100 py-11">
+    <div className="mx-auto min-h-[750px] max-w-full xl:min-h-[100vh] bg-gray-100 py-11">
       <motion.div
         variants={fedIn('up', 0.2)}
         initial="hidden"

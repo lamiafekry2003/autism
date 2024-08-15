@@ -91,8 +91,8 @@ export default function Application() {
   ];
 
   return (
-    <div className="pt-11">
-       <div className=" mx-auto min-h-[100vh]  py-10">
+    <div className="pt-11 overflow-x-hidden">
+       <div className=" mx-auto min-h-[750px] max-w-full xl:min-h-[100vh]  py-10">
        <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -105,7 +105,7 @@ export default function Application() {
         </h2>
       </motion.div>
       </div>
-      <div className="flex flex-wrap justify-center items-center my-5">
+      <div className="flex flex-wrap lg:flex-row justify-center items-center my-5">
         <motion.div
           variants={fedIn('left', 0.2)}
           initial="hidden"
@@ -116,7 +116,7 @@ export default function Application() {
           <img
             src={img2}
             alt="App Preview"
-            className="lg:max-w-xl h-80 lg:h-[450px] object-cover"
+            className="lg:max-w-md 2xl:max-w-lg h-80 lg:h-[450px] object-cover"
           />
         </motion.div>
         <motion.div
@@ -124,12 +124,12 @@ export default function Application() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
-          className="max-w-sm lg:max-w-2xl ml-4 mt-4 tracking-wider"
+          className="max-w-sm lg:max-w-md ml-4 mt-4 tracking-wider"
         >
-          <p className="text-2xl text-slate-500 font-bold px-5 lg:px-0">
+          <p className="text-xl text-slate-500 font-bold px-5 lg:px-0">
             Autism is a free app that empowers parents to assess their young children for early signs of autism
           </p>
-          <ul className="text-slate-500 list-disc  my-3 px-5 lg:px-0 leading-8">
+          <ul className="text-slate-500 list-disc  my-3 px-5 lg:px-0 leading-6">
             {features.map((feature, index) => (
               <li key={index} className="mb-2">
                 {feature}
@@ -148,7 +148,7 @@ export default function Application() {
         </motion.div>
       </div>
     </div>
-      <div className="mx-auto min-h-[100vh] bg-gray-100 py-11">
+      <div className="mx-auto min-h-[750px] max-w-full xl:min-h-[100vh] bg-gray-100 py-11">
         <motion.div 
           variants={fedIn('left', 0.2)} 
           initial="hidden"
@@ -199,7 +199,7 @@ export default function Application() {
         </div>
       </div>
       {/* ScreenShot */}
-      <div className="mx-auto min-h-[100vh] py-10">
+      <div className="mx-auto min-h-[750px] max-w-full xl:min-h-[100vh] py-10">
         <h2 className="text-blue-500 text-2xl lg:text-4xl font-bold tracking-wider text-center mb-8">
           Autism Screenshots
         </h2>

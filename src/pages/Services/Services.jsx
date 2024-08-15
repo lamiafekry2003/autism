@@ -22,7 +22,7 @@ export default function Services() {
   ];
   return (
     <div className=" pt-11">
-     <div className="  mx-auto min-h-[100vh] bg-gray-100 py-11">
+     <div className="  mx-auto min-h-[750px] max-w-full xl:min-h-[100vh] bg-gray-100 py-11">
      <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -39,7 +39,7 @@ export default function Services() {
           childern and adults with:
         </p>
       </motion.div>
-      <div className="grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-3 my-11 text-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 sm:grid-cols-2 my-11 text-center">
           {services.map((service) => (
             <motion.div
               key={service.id}
@@ -59,7 +59,7 @@ export default function Services() {
      </div>
     </div>
      {/* Detailed Services Section */}
-     <section className="container min-h-[100vh]: mx-auto text-center py-12">
+     <section className="container min-h-[750px] max-w-full xl:min-h-[100vh]: mx-auto text-center py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {detailedServices.map(service => (
             <div key={service.id} className=" p-6 flex flex-col items-center ">

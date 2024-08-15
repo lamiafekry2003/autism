@@ -7,13 +7,15 @@ import { Link } from 'react-router-dom';
 
 export default function Resource() {
 
-  const { data, isLoading } = useGetResource('resource', getResource);
+  const { data, isLoading ,isError ,error} = useGetResource('resource', getResource);
 
-
+  if(isError){
+    <h2>{error}</h2>
+  }
 
   return (
     // <div className=' '>
-      <div className="max-w-full min-h-[100vh] mx-auto bg-gray-100 py-11 overflow-hidden px-4 sm:px-6 lg:px-8">
+      <div className="min-h-[750px]  xl:min-h-[100vh] mx-auto bg-gray-100 py-11 overflow-x-hidden sm:overflow-hidden px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fedIn('up', 0.2)}
           initial="hidden"

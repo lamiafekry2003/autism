@@ -7,11 +7,11 @@ import "./header.scss";
 
 export default function Header() {
   return (
-    <div className="relative overflow-hidden min-h-[650px] max-w-full sm:min-h-[100vh] bg-gray-100 flex justify-center items-center   ">
+    <div className="relative overflow-x-hidden sm:overflow-hidden min-h-[750px]  xl:min-h-[100vh] bg-gray-100 flex justify-center items-center   ">
       {/* background pattern */}
       <div className="h-[700px] w-[700px] bg-blue-500 absolute  -top-[40%] right-0 rounded-3xl rotate-45 -z[8] "></div>
       {/* hero section */}
-      <div className="container  mx-auto px-2 lg:px-6">
+      <div className="container  mx-auto px-2 lg:px-9">
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* text content section */}
