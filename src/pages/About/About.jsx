@@ -60,47 +60,7 @@ export default function About() {
         </div>
       </div>
        */}
-      {/* Section 2 */}
-      {/* <div className="mx-auto mb-6 lg:mb-8 min-h-[60vh] lg:min-h-[100vh]">
-        <div className="flex flex-col lg:flex-row lg:gap-12 justify-center items-center px-4 lg:px-0 ">
-          <motion.div 
-          variants={fedIn('left', 0.2)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
-          className="order-2 lg:order-1 max-w-xs md:max-w-sm lg:max-w-md tracking-wider">
-            <h2 className="text-2xl lg:text-4xl my-2 font-bold">
-              Our Website{`'`}s Goal is
-            </h2>
-            <h2 className="text-2xl lg:text-4xl my-2 font-bold">
-              How to Use the App for
-            </h2>
-            <span className="block text-2xl lg:text-4xl font-bold my-2 text-blue-500">
-              Autism Detection
-            </span>
-            <p className="text-slate-500 leading-9">
-              FREE app Austism was launched in 2024 and has been parents and
-              caregivers of children aged 11 to 30 months, the parents and
-              caregivers of children aged 11 to 30 months, the Autism provide
-              ,provide a community for Autism and test for Autism provide
-              ,provide a community for Autism and test for It is based on
-              research by the Olga Tennison Autism Research It is based on
-              research by the Olga Tennison Autism Research Centre at La Trobe
-              University, Australia. The early autism detection method used in
-              ASDetect is 83% accurate.
-            </p>
-          </motion.div>
-
-          <div 
-          className="order-1 lg:order-2 lg:w-auto mt-0 lg:ml-5">
-            <img
-              src={img3}
-              alt="About Image"
-              className="w-80 lg:w-96 h-[400px] lg:h-[600px] object-cover rounded-md mx-auto"
-            />
-          </div>
-        </div>
-      </div> */}
+      
       <div className="mx-auto mb-6 lg:mb-8  xl:min-h-[84vh]">
   <div className="flex flex-col lg:flex-row lg:gap-12 justify-center items-center py-11 px-4 lg:px-0">
     <motion.div 
