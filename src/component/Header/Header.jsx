@@ -35,7 +35,7 @@ export default function Header() {
                 was launched in 2024 and has been downloaded 90,000 times
               </p>
 
-              <div className="my-4">
+              <div className=" my-3 lg:my-4 ">
                 <button className=" bg-blue-500  text-white  py-2 rounded button">
                   <span>Download</span>
                 </button>

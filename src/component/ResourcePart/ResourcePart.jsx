@@ -15,14 +15,14 @@ export default function Resource() {
 
   return (
 
-      <div className="xl:min-h-[84vh] mx-auto bg-gray-100 py-9 overflow-x-hidden sm:overflow-hidden px-4 sm:px-6 lg:px-8">
+      <div className="min-h-[84vh] mx-auto bg-gray-100  overflow-x-hidden sm:overflow-hidden px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fedIn('up', 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
           className="tracking-wider">
-          <h2 className="text-center font-bold text-2xl lg:text-4xl">Resource</h2>
+          <h2 className="text-center font-bold text-2xl lg:text-4xl mt-5">Resource</h2>
           <p className="text-slate-500 mt-5 text-center mx-4 sm:mx-8 lg:mx-0">
             Resource provides us with links to international websites that talk about autism in children, its causes, and other things.
           </p>

@@ -16,7 +16,7 @@ export default function ServicePart() {
   ];
 
   return (
-    <div className="  mx-auto lg:min-h-[84vh] bg-gray-100 py-9 overflow-x-hidden">
+    <div className="  mx-auto lg:min-h-[84vh] bg-gray-100 overflow-x-hidden">
      <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -24,16 +24,16 @@ export default function ServicePart() {
       whileInView="show"
       viewport={{ once: false, amount: 0.7 }}
      className="tracking-wider">
-        <h2 className=" text-center font-bold text-2xl lg:text-4xl">
+        <h2 className=" text-center font-bold text-2xl lg:text-4xl pt-5">
           Services
         </h2>
-        <p className="text-slate-500  mt-5 text-center mx-2 lg:mx-0 ">
+        <p className="text-slate-500  my-5 text-center mx-2 lg:mx-0 ">
           We provide auailty behavioral services based on the principles of
           applied Behavior analysis .ABA and Behavioral Services are provided to
           childern and adults with:
         </p>
       </motion.div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 sm:grid-cols-2 my-11 text-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 sm:grid-cols-2 lg:my-9 text-center">
           {services.map((service) => (
             <motion.div
               key={service.id}
@@ -50,9 +50,9 @@ export default function ServicePart() {
             </motion.div>
           ))}
         </div>
-        <div className="flex justify-center items-center mx-auto">
+        <div className="flex justify-center items-center mx-auto mb-4">
         <Link to="service">
-             <button className="btn mt-2">
+             <button className="btn">
             <span className="btn-text-one">See More</span>
               <span className="btn-text-two">Great!</span>
            </button>

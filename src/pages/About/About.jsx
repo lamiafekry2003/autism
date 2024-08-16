@@ -102,7 +102,7 @@ export default function About() {
 </div>
 
       {/* Section 3 */}
-      <div className="mx-auto py-10 lg:px-10 min-h-[750px] max-w-full xl:min-h-[84vh] bg-gray-100">
+      <div className="mx-auto py-10 lg:px-10  max-w-full min-h-[84vh] bg-gray-100">
         <motion.div
         variants={fedIn('up', 0.2)}
         initial="hidden"
@@ -110,7 +110,7 @@ export default function About() {
         viewport={{ once: false, amount: 0.7 }} 
         className=" "
         >
-          <h2 className="text-3xl font-bold text-center mb-10 mx-1">Frequently Asked Questions</h2>
+          <h2 className="text-3xl font-bold text-center mx-1">Frequently Asked Questions</h2>
         </motion.div>
         <div >
           {faqs.map((faq, index) => (

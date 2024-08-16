@@ -14,7 +14,7 @@ export default function AppPart() {
   ];
 
   return (
-    <div className=" mx-auto  overflow-x-hidden gl:min-h-[84vh] py-9">
+    <div className=" mx-auto  overflow-x-hidden gl:min-h-[84vh] py-7">
        <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -22,7 +22,7 @@ export default function AppPart() {
       whileInView="show"
       viewport={{ once: false, amount: 0.7 }}
      className="tracking-wider">
-        <h2 className=" text-center font-bold text-2xl lg:text-4xl">
+        <h2 className=" text-center font-bold text-2xl lg:text-4xl ">
           Download App
         </h2>
       </motion.div>

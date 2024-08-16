@@ -22,7 +22,7 @@ export default function Services() {
   ];
   return (
     <div className=" pt-11">
-     <div className="  mx-auto max-w-full  min-h-[84vh] bg-gray-100 py-11">
+     <div className="  mx-auto max-w-full min-h-[86vh] bg-gray-100  py-14">
      <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -33,13 +33,13 @@ export default function Services() {
         <h2 className=" text-center font-bold text-2xl lg:text-4xl">
           Services
         </h2>
-        <p className="text-slate-500  mt-5 text-center mx-2 lg:mx-0 ">
+        <p className="text-slate-500  my-5 text-center mx-2 lg:mx-0 ">
           We provide auailty behavioral services based on the principles of
           applied Behavior analysis .ABA and Behavioral Services are provided to
           childern and adults with:
         </p>
       </motion.div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 sm:grid-cols-2 my-11 text-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 sm:grid-cols-2 lg:my-9 text-center">
           {services.map((service) => (
             <motion.div
               key={service.id}

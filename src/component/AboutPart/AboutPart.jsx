@@ -71,15 +71,15 @@ import "./about.scss";
 
 export default function AboutPart() {
   return (
-    <div className="py-9  lg:min-h-[84vh] mx-auto overflow-x-hidden ">
+    <div className=" min-h-[84vh] mx-auto overflow-x-hidden ">
       <motion.div
         variants={fedIn("up", 0.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }}
-        className="text-center"
+        className="text-center "
       >
-        <h2 className="font-bold text-2xl lg:text-4xl tracking-wider">Welcome To Autism Web</h2>
+        <h2 className="font-bold text-2xl lg:text-4xl tracking-wider pt-5 ">Welcome To Autism Web</h2>
       </motion.div>
       <div className="flex flex-col lg:flex-row lg:gap-12 justify-center items-center px-4 lg:px-2 py-9">
         <motion.div
@@ -87,7 +87,7 @@ export default function AboutPart() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
-          className="mt-9 mx-auto lg:mx-5 w-fit  min-w-80"
+          className=" mx-auto lg:mx-5 w-fit  min-w-80"
         >
           <img
             src={img3}

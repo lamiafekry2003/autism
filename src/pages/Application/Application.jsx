@@ -91,8 +91,8 @@ export default function Application() {
   ];
 
   return (
-    <div className="pt-11 overflow-x-hidden">
-       <div className=" mx-auto min-h-[84vh]  py-10">
+    <div className="pt-14 overflow-x-hidden">
+       <div className=" mx-auto min-h-[84vh] py-9">
        <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -105,7 +105,7 @@ export default function Application() {
         </h2>
       </motion.div>
       </div>
-      <div className="flex flex-wrap lg:flex-row justify-center items-center my-5">
+      <div className="flex flex-wrap lg:flex-row justify-center items-center my-4">
         <motion.div
           variants={fedIn('left', 0.2)}
           initial="hidden"
