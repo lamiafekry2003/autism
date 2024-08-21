@@ -27,7 +27,7 @@ export default function Resource() {
         variants={fedIn('up', 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="tracking-wider">
         <h2 className="text-center font-bold text-2xl lg:text-4xl">Resource</h2>
         <p className="text-slate-500 mt-5 text-center mx-2 lg:mx-0">
@@ -50,7 +50,7 @@ export default function Resource() {
                 variants={fedIn('left', 0.2)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.7 }}
+                viewport={{ once: false, amount: 0.2 }}
                 className="flex">
                 <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow w-full">
                   <div className="flex items-center gap-4">

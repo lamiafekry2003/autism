@@ -98,7 +98,7 @@ export default function Application() {
       variants={fedIn('up', 0.2)} 
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.7 }}
+      viewport={{ once: false, amount: 0.2 }}
      className="tracking-wider">
         <h2 className=" text-center font-bold text-2xl lg:text-4xl">
           Download App
@@ -110,7 +110,7 @@ export default function Application() {
           variants={fedIn('left', 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="mt-9 mx-auto lg:mx-5 w-fit min-w-80"
         >
           <img
@@ -123,7 +123,7 @@ export default function Application() {
           variants={fedIn('right', 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="max-w-sm lg:max-w-md ml-4 mt-4 tracking-wider"
         >
           <p className="text-xl text-slate-500 font-bold px-5 lg:px-0">
@@ -153,7 +153,7 @@ export default function Application() {
           variants={fedIn('left', 0.2)} 
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="ml-2">
           <h2 className="lg:ml-20 text-blue-500 px-5 mb-3 font-bold text-2xl lg:text-4xl tracking-wider">
             Using Autism is easy
@@ -164,7 +164,7 @@ export default function Application() {
             variants={fedIn('left', 0.2)} 
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}>
+            viewport={{ once: false, amount: 0.2 }}>
             {steps.map((step, index) => (
               <li key={index} className="tracking-wider my-5">
                 <div className="flex flex-col sm:ml-2">
@@ -188,7 +188,7 @@ export default function Application() {
             variants={fedIn('right', 0.2)} 
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.2 }}
             className="flex justify-center items-center mt-9 mx-auto lg:mx-5 w-fit min-w-80">
             <img
               src={test}
@@ -207,7 +207,7 @@ export default function Application() {
           variants={fedIn('left', 0.2)} 
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="mx-auto w-[50%]">
           <Slider {...settings}>
             {screenshots.map((screenshot, index) => (

@@ -67,7 +67,7 @@ export default function About() {
       variants={fedIn('left', 0.2)}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.7 }}
+      viewport={{ once: false, amount: 0.2 }}
       className="order-2 lg:order-1 max-w-xs md:max-w-sm lg:max-w-md tracking-wider"
     >
       <h2 className="text-2xl lg:text-4xl my-2 font-bold">
@@ -107,7 +107,7 @@ export default function About() {
         variants={fedIn('up', 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.7 }} 
+        viewport={{ once: false, amount: 0.2 }} 
         className=" "
         >
           <h2 className="text-3xl font-bold text-center mx-1">Frequently Asked Questions</h2>
@@ -118,7 +118,7 @@ export default function About() {
             variants={fedIn('left', 0.2)}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: false, amount: 0.2 }}
               key={index}
               className="p-7"
             >

@@ -22,7 +22,7 @@ export default function ServicePart() {
       variants={fedIn('up', 0.2)} 
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.7 }}
+      viewport={{ once: false, amount: 0.2 }}
      className="tracking-wider">
         <h2 className=" text-center font-bold text-2xl lg:text-4xl pt-5">
           Services
@@ -40,7 +40,7 @@ export default function ServicePart() {
               variants={fedIn('left', 0.2)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0.2 }}
               className="flex flex-col justify-center items-center mx-auto md-mx-5 lg:mx-5 my-5 bg-white shadow-xl w-72 h-[150px] rounded-md text-center hover:shadow-lg transition-shadow"
             >
               <div className="flex justify-center items-center w-10 h-10 border-2 border-green-600 rounded-full mb-4">

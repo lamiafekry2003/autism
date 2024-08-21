@@ -76,7 +76,7 @@ export default function AboutPart() {
         variants={fedIn("up", 0.2)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.7 }}
+        viewport={{ once: false, amount: 0.2 }}
         className="text-center "
       >
         <h2 className="font-bold text-2xl lg:text-4xl tracking-wider pt-5 ">Welcome To Autism Web</h2>
@@ -86,7 +86,7 @@ export default function AboutPart() {
           variants={fedIn("left", 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.2 }}
           className=" mx-auto lg:mx-5 w-fit  min-w-80"
         >
           <img
@@ -99,7 +99,7 @@ export default function AboutPart() {
           variants={fedIn("right", 0.2)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.7 }}
+          viewport={{ once: false, amount: 0.2 }}
           className="mt-4 sm:mt-0 max-w-fit sm:max-w-lg  lg:ml-2 tracking-wider"
         >
           <p className="text-slate-500 leading-9 mx-2">
