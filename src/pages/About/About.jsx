@@ -166,7 +166,7 @@ export default function About() {
         </div>
       </div>
       {/* section 4 */}
-      <div className="mx-auto py-9 xl:min-h-[84vh] max-w-screen-xl">
+      <div className="mx-auto py-9 xl:min-h-[84vh] w-full md:max-w-screen-xl">
         <div className="text-center">
           <h2 className="font-bold text-2xl lg:text-4xl tracking-wider pt-6">
             365 Developers
@@ -189,16 +189,18 @@ export default function About() {
                 data-carousel-item
               >
                 <div className="flex flex-col justify-center items-center mt-8 lg:mt-12">
-                  <img
-                    src={person.src}
-                    className="block w-20 h-20 md:w-24 md:h-24 rounded-full"
-                    alt={person.name}
-                  />
-                  <p className="mt-3 text-sm md:text-base text-slate-500 md:leading-9 text-center max-w-xs md:max-w-lg ">{person.desc}</p>
-                  <h4 className="mt-3 md:mt-5 text-sm md:text-lg text-blue-500">
-                    {person.name}
-                  </h4>
-                </div>
+  <img
+    src={person.src}
+    className="block w-20 h-20 md:w-24 md:h-24 rounded-full"
+    alt={person.name}
+  />
+  <p className="mt-3 text-sm md:text-base text-slate-500 md:leading-9 text-center max-w-xs md:max-w-lg lg:max-w-xl">
+    {person.desc}
+  </p>
+  <p className=" h4 mt-3 md:mt-5 text-sm md:text-lg  text-blue-500">
+    {person.name}
+  </p>
+</div>
               </div>
             ))}
           </div>
@@ -210,9 +212,9 @@ export default function About() {
             className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
             data-carousel-prev
           >
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <span className="inline-flex items-center justify-center -ml-4 md:-ml-0 w-10 h-10 rounded-full dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
               <svg
-                className="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180"
+                className="w-4 h-4  text-black dark:text-gray-800 rtl:rotate-180"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -234,7 +236,7 @@ export default function About() {
             className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
             data-carousel-next
           >
-            <span className="inline-flex items-center justify-center w-10 h-10 rounded-full dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <span className="inline-flex items-center justify-center -mr-4 md:-mr-0 w-10 h-10 rounded-full dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
               <svg
                 className="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180"
                 aria-hidden="true"
