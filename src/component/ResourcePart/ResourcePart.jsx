@@ -70,7 +70,7 @@ export default function Resource() {
         </div>
         
         {/* {!isLoading && ( */}
-          <div className="flex justify-center items-center mx-auto">
+          <div className="flex justify-center items-center mx-auto my-5 md:my-0">
             <Link to="resource">
               <button className="btn mt-2">
                 <span className="btn-text-one">See More</span>
