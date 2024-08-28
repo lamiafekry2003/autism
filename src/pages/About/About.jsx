@@ -212,7 +212,7 @@ export default function About() {
             className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
             data-carousel-prev
           >
-            <span className="inline-flex items-center justify-center -ml-4 md:-ml-0    group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <span className="inline-flex items-center justify-center  -ml-2 md:-ml-0  group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
               <svg
                 className="w-4 h-4  text-black dark:text-gray-800 rtl:rotate-180"
                 aria-hidden="true"
@@ -236,7 +236,7 @@ export default function About() {
             className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
             data-carousel-next
           >
-            <span className="inline-flex items-center justify-center -mr-4 md:-mr-0      group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+            <span className="inline-flex items-center justify-center -mr-2 md:-mr-0      group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
               <svg
                 className="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180"
                 aria-hidden="true"
