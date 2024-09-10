@@ -10,7 +10,7 @@ import Loading from '../../component/Loading';
 
 export default function Resource() {
   const [page,setPage]=useState(1)
-  const {data,isError,error} = useGetResource(['resource',page],getResourcePagination)
+  const {data,isError,error,isLoading} = useGetResource(['resource',page],getResourcePagination)
   console.log(data)
 
   if(isError){
@@ -37,15 +37,15 @@ export default function Resource() {
       </motion.div>
       
       <div className=" mx-10 lg:mx-20 my-10">
-        {/* {isLoading ? ( */}
+        {isLoading ? (
          <div className='grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
           {Array(9).fill(0).map((_, index) => (
                 <Loading key={index} />
           ))}
          </div>
-        {/* ) : ( */}
+        ) : (
           
-          {/* <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {data?.data?.fullData?.map((resource) => (
               <motion.div
                 key={resource?.position}
@@ -74,8 +74,8 @@ export default function Resource() {
                 </div>
               </motion.div>
             ))}
-          </div> */}
-        {/* )} */}
+          </div>
+        )}
       </div>
 
       <div className="flex justify-center items-center">

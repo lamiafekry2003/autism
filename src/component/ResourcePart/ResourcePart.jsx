@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 
 export default function Resource() {
 
-  const {isError ,error} = useGetResource('resource', getResource);
-// data, isLoading 
+  const {data,isError ,error ,isLoading} = useGetResource('resource', getResource);
+
   if(isError){
     <h2>{error}</h2>
   }
@@ -29,14 +29,14 @@ export default function Resource() {
         </motion.div>
         
         <div className="mx-2 sm:mx-8 lg:mx-20 my-10">
-          {/* {isLoading ? ( */}
+          {isLoading ? (
             <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 <Loading />
                 <Loading/>
                 <Loading/>
             </div>
-          {/* ) : ( */}
-            {/* <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+           ) : ( 
+             <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
               {data?.data?.fullData?.slice(2, 5).map((resource) => (
                 <motion.div
                   key={resource?.position}
@@ -65,11 +65,11 @@ export default function Resource() {
                   </div>
                 </motion.div>
               ))}
-            </div> */}
-          {/* )} */}
+            </div> 
+         )}
         </div>
         
-        {/* {!isLoading && ( */}
+       {!isLoading && ( 
           <div className="flex justify-center items-center mx-auto my-5 md:my-0">
             <Link to="resource">
               <button className="btn mt-2">
@@ -78,7 +78,7 @@ export default function Resource() {
               </button>
             </Link>
           </div>
-        {/* )} */}
+        )} 
       </div>
 
   );
