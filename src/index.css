@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Playpen+Sans:wght@100..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Patrick+Hand&family=Playpen+Sans:wght@100..800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Playpen+Sans:wght@100..800&display=swap'); */
 body{
-  
-  font-family: "Playpen Sans", cursive;
+  /* font-family: "Playpen Sans", cursive; */
+  font-family: "Nerko One", cursive;
 }
 
 /* .active{
