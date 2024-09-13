@@ -7,7 +7,7 @@ import "./header.scss";
 
 export default function Header() {
   return (
-    <div className="relative overflow-x-hidden sm:overflow-hidden  lg:min-h-[100vh] bg-gray-100 flex justify-center items-center   ">
+    <div className="relative overflow-x-hidden sm:overflow-hidden  lg:min-h-[100vh] bg-gray-50 flex justify-center items-center   ">
       {/* background pattern */}
       <div className="h-[700px] w-[700px] bg-blue-500 absolute  -top-[40%] right-0 rounded-3xl rotate-45 -z[8] "></div>
       {/* hero section */}
@@ -22,10 +22,10 @@ export default function Header() {
               viewport={{ once: false, amount: 0.7 }}
               className="flex flex-col justify-center mx-4 sm:mx-20 gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10"
             >
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-neutral-700">
                 Autism Detection
               </h1>
-              <p className="text-sm max-w-full lg:max-w-lg my-4  lg:text-slate-500 sm:text-slate-500">
+              <p className="text-sm max-w-full lg:max-w-lg my-4  lg:text-neutral-500 sm:text-neutral-500">
                 For parents and caregivers of children aged 11 to 30 months, the
                 FREE app
                 <span className="text-blue-500 lg:text-blue-500 sm:lg:text-blue-500 ">

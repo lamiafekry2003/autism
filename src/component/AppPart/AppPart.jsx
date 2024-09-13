@@ -22,7 +22,7 @@ export default function AppPart() {
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
      className="tracking-wider">
-        <h2 className=" text-center font-bold text-2xl lg:text-4xl ">
+        <h2 className=" text-center font-bold text-2xl lg:text-4xl text-neutral-700">
           Download App
         </h2>
       </motion.div>
@@ -46,12 +46,12 @@ export default function AppPart() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.2 }}
-          className="max-w-sm lg:max-w-md ml-4 mt-4 tracking-wider"
+          className="max-w-sm lg:max-w-lg ml-4 mt-4 tracking-wider"
         >
-          <p className="text-xl text-slate-500 font-bold px-5 lg:px-0">
+          <p className="text-xl text-neutral-700 font-bold px-3 lg:px-0">
             Autism is a free app that empowers parents to assess their young children for early signs of autism
           </p>
-          <ul className="text-slate-500 list-disc  my-3 px-5 lg:px-0 leading-6">
+          <ul className="text-neutral-500 list-disc  my-3 px-5 lg:px-0 leading-6">
             {features.map((feature, index) => (
               <li key={index} className="mb-2">
                 {feature}

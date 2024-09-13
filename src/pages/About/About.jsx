@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { fedIn } from "../../variants";
 import men from "../../assets/men.jfif";
 import wamen from "../../assets/wamen.jpg";
-
+import video from "../../assets/autismDetect (online-video-cutter.com).mp4"
 export default function About() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedQuestion, setSelectedQuestion] = useState({});
@@ -87,6 +87,12 @@ export default function About() {
         </div>
       </div>
        */}
+       <div className="order-1 lg:order-2 lg:w-auto mt-0 xl:min-h-[84vh]">
+  <video className="w-md lg:w-full h-[300px] sm:h-[600px] md:h-[500px] lg:h-[600px] xl:h-full object-cover  mx-auto" autoPlay loop  controls>
+    <source src={video} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</div>
 
       <div className="mx-auto mb-6 lg:mb-8  xl:min-h-[84vh]">
         <div className="flex flex-col lg:flex-row lg:gap-12 justify-center items-center py-11 px-4 lg:px-0">
@@ -97,16 +103,16 @@ export default function About() {
             viewport={{ once: false, amount: 0.2 }}
             className="order-2 lg:order-1 max-w-xs md:max-w-sm lg:max-w-md tracking-wider"
           >
-            <h2 className="text-2xl lg:text-4xl my-2 font-bold">
+            <h2 className="text-2xl lg:text-4xl my-2 font-bold text-neutral-700">
               Our Website{`'`}s Goal is
             </h2>
-            <h2 className="text-2xl lg:text-4xl my-2 font-bold">
+            <h2 className="text-2xl lg:text-4xl my-2 font-bold  text-neutral-700">
               How to Use the App for
             </h2>
             <span className="block text-2xl lg:text-4xl font-bold my-2 text-blue-500">
               Autism Detection
             </span>
-            <p className="text-slate-500 leading-9">
+            <p className="text-neutral-500 leading-9">
               FREE app Autism was launched in 2024 and has been parents and
               caregivers of children aged 11 to 30 months, the parents and
               caregivers of children aged 11 to 30 months. Autism provides a
@@ -128,7 +134,7 @@ export default function About() {
       </div>
 
       {/* Section 3 */}
-      <div className="mx-auto py-10 lg:px-10  max-w-full min-h-[84vh] bg-gray-100">
+      <div className="mx-auto py-10 lg:px-10  max-w-full min-h-[84vh] bg-gray-50">
         <motion.div
           variants={fedIn("up", 0.2)}
           initial="hidden"
@@ -136,7 +142,7 @@ export default function About() {
           viewport={{ once: false, amount: 0.2 }}
           className=" "
         >
-          <h2 className="text-3xl font-bold text-center mx-1">
+          <h2 className="text-3xl font-bold text-center mx-1 text-neutral-700">
             Frequently Asked Questions
           </h2>
         </motion.div>
@@ -157,7 +163,7 @@ export default function About() {
                 <span className="font-bold inline-flex justify-center items-center p-1 w-6 h-6 text-blue-500 rounded-full border-2 border-blue-500  hover:text-white hover:bg-blue-500">
                   ?
                 </span>
-                <h3 className="text-base lg:text-lg font-semibold hover:underline hover:text-blue-500">
+                <h3 className="text-base lg:text-lg font-semibold text-neutral-500 hover:underline hover:text-blue-500">
                   {faq.question}
                 </h3>
               </div>
@@ -168,7 +174,7 @@ export default function About() {
       {/* section 4 */}
       <div className="mx-auto py-9 xl:min-h-[84vh] w-full md:max-w-screen-xl">
         <div className="text-center">
-          <h2 className="font-bold text-2xl lg:text-4xl tracking-wider pt-6">
+          <h2 className="font-bold text-2xl lg:text-4xl tracking-wider pt-6 text-neutral-700">
             365 Developers
           </h2>
         </div>
@@ -194,7 +200,7 @@ export default function About() {
     className="block w-20 h-20 md:w-24 md:h-24 rounded-full"
     alt={person.name}
   />
-  <p className="mt-3 text-sm md:text-base text-slate-500 md:leading-9 text-center max-w-xs md:max-w-lg lg:max-w-xl">
+  <p className="mt-3 text-sm md:text-base text-neutral-500 md:leading-9 text-center max-w-xs md:max-w-lg lg:max-w-xl">
     {person.desc}
   </p>
   <p className=" h4 mt-3 md:mt-5 text-sm md:text-lg  text-blue-500">
@@ -256,7 +262,7 @@ export default function About() {
           </button>
 
           {/* Additional text */}
-          <div className="text-center text-sm md:text-xl font-bold tracking-wide my-2">
+          <div className="text-center text-sm md:text-xl font-bold tracking-wide my-2 text-neutral-500">
             <h3 className=" ">Zagazig University</h3>
             <h3 className="">Computer and Information</h3>
           </div>
@@ -271,7 +277,7 @@ export default function About() {
               {selectedQuestion.question}
             </h3>
             <hr />
-            <p className="text-gray-700">{selectedQuestion.answer}</p>
+            <p className="text-neutral-500">{selectedQuestion.answer}</p>
             <button
               onClick={closeModal}
               className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"

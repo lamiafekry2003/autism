@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { fedIn } from '../../variants';
 import Loading from '../../component/Loading';
 import { Link } from 'react-router-dom';
+import img from "../../assets/logo (2).png"
 
 export default function Resource() {
 
@@ -15,15 +16,15 @@ export default function Resource() {
 
   return (
 
-      <div className="min-h-[84vh] mx-auto bg-gray-100  overflow-x-hidden sm:overflow-hidden px-4 sm:px-6 lg:px-8">
+      <div className="min-h-[84vh] mx-auto bg-gray-50  overflow-x-hidden sm:overflow-hidden px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fedIn('up', 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
           className="tracking-wider">
-          <h2 className="text-center font-bold text-2xl lg:text-4xl mt-5">Resource</h2>
-          <p className="text-slate-500 mt-5 text-center mx-4 sm:mx-8 lg:mx-0">
+          <h2 className="text-center font-bold text-2xl lg:text-4xl mt-5 text-neutral-700">Resource</h2>
+          <p className="text-neutral-500 mt-5 text-center mx-4 sm:mx-8 lg:mx-0">
             Resource provides us with links to international websites that talk about autism in children, its causes, and other things.
           </p>
         </motion.div>
@@ -48,11 +49,11 @@ export default function Resource() {
                   <div className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow w-full">
                     <div className="flex items-center gap-5">
                       <div className="border-2 rounded-[50%] p-2 border-blue-500">
-                        <img src={resource?.favicon} alt="" className="w-8 h-8 object-cover" />
+                      {resource?.favicon ?<img src={resource?.favicon} alt="" className=" max-w-7 max-h-7 object-cover" />:<img src={img} alt="" className=" max-w-7 max-h-7 object-cover" />}
                       </div>
-                      <h2 className="text-2xl font-semibold">{resource.title}</h2>
+                      <h2 className="text-2xl font-semibold line-clamp-2 overflow-hidden text-ellipsis text-neutral-700">{resource.title}</h2>
                     </div>
-                    <p className="text-gray-600 mt-4 mb-4">{resource.snippet}</p>
+                    <p className="text-neutral-500 mt-4 mb-4">{resource.snippet}</p>
                     <a
                       href={resource.link}
                       className="inline-block text-blue-500 hover:text-blue-700 font-semibold"

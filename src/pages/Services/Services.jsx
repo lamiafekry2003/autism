@@ -22,7 +22,7 @@ export default function Services() {
   ];
   return (
     <div className=" pt-11">
-     <div className="  mx-auto max-w-full min-h-[86vh] bg-gray-100  py-14">
+     <div className="  mx-auto max-w-full min-h-[86vh] bg-gray-50 py-14">
      <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -30,10 +30,10 @@ export default function Services() {
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
      className="tracking-wider">
-        <h2 className=" text-center font-bold text-2xl lg:text-4xl">
+        <h2 className=" text-center font-bold text-2xl lg:text-4xl text-neutral-700">
           Services
         </h2>
-        <p className="text-slate-500  my-5 text-center mx-2 lg:mx-0 ">
+        <p className="text-neutral-500  my-5 text-center mx-2 lg:mx-0 ">
           We provide auailty behavioral services based on the principles of
           applied Behavior analysis .ABA and Behavioral Services are provided to
           childern and adults with:
@@ -52,7 +52,7 @@ export default function Services() {
               <div className="flex justify-center items-center w-10 h-10 border-2 border-green-600 rounded-full mb-4">
                 <i className="fa-solid fa-check text-green-500 text-2xl"></i>
               </div>
-              <p className="w-full">{service.text}</p>
+              <p className="w-full text-neutral-500">{service.text}</p>
             </motion.div>
           ))}
         </div>
@@ -74,7 +74,7 @@ export default function Services() {
               viewport={{ once: false, amount: 0.2 }}
               className="flex flex-col justify-center items-center mx-auto md-mx-5 lg:mx-5 my-5 bg-white shadow-2xl  w-72 h-[150px] rounded-md text-center hover:shadow-lg transition-shadow"
             >
-              <p className="w-full">{service.title}</p>
+              <p className="w-full text-neutral-700">{service.title}</p>
             </motion.div>
               <motion.p 
               key={service.id}
@@ -82,7 +82,7 @@ export default function Services() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0.2 }}
-              className="text-gray-500 max-w-xs lg:max-w-[40%]">{service.description}</motion.p>
+              className="text-neutral-500 max-w-xs lg:max-w-[40%]">{service.description}</motion.p>
             </div>
           ))}
         </div>

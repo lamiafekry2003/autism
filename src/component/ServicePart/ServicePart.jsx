@@ -16,7 +16,7 @@ export default function ServicePart() {
   ];
 
   return (
-    <div className="  mx-auto lg:min-h-[84vh] bg-gray-100 overflow-x-hidden">
+    <div className="  mx-auto lg:min-h-[84vh] bg-gray-50 overflow-x-hidden">
      <div className="mx-auto w-fit">
      <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -24,10 +24,10 @@ export default function ServicePart() {
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
      className="tracking-wider">
-        <h2 className=" text-center font-bold text-2xl lg:text-4xl pt-5">
+        <h2 className=" text-center font-bold text-2xl lg:text-4xl pt-5 text-neutral-700">
           Services
         </h2>
-        <p className="text-slate-500  my-5 text-center mx-2 lg:mx-0 ">
+        <p className=" text-neutral-500  my-5 text-center mx-2 lg:mx-0 ">
           We provide auailty behavioral services based on the principles of
           applied Behavior analysis .ABA and Behavioral Services are provided to
           childern and adults with:
@@ -46,7 +46,7 @@ export default function ServicePart() {
               <div className="flex justify-center items-center w-10 h-10 border-2 border-green-600 rounded-full mb-4">
                 <i className="fa-solid fa-check text-green-500 text-2xl"></i>
               </div>
-              <p className="w-full">{service.text}</p>
+              <p className="w-full text-neutral-500">{service.text}</p>
             </motion.div>
           ))}
         </div>
