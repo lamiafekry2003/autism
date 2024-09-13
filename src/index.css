@@ -3,20 +3,17 @@
 @tailwind utilities;
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-
-body{
-  /* font-family: "Playpen Sans", cursive; */
-  
-  font-family: "Sriracha", cursive !important;
-  font-weight: 400;
-  font-style: normal;
+/* for mobile */
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+body{ 
+  font-family: "Playpen Sans", cursive;
 }
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     font-family: "Reddit Sans Condensed", sans-serif;
   }
-} */
+}
 
 /* .active{
   background-color: blue;
