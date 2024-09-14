@@ -1,10 +1,10 @@
 import img3 from "../../assets/about.png";
-import { useState,useRef } from "react";
+import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { fedIn } from "../../variants";
 import men from "../../assets/men.jfif";
 import wamen from "../../assets/wamen.jpg";
-import video from "../../assets/autismDetect (online-video-cutter.com).mp4"
+import video from "../../assets/autismDetect (online-video-cutter.com).mp4";
 // import { FaWater } from 'react-icons/fa';  // Importing water drop icon
 export default function About() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,12 +22,36 @@ export default function About() {
   };
 
   const peop = [
-    { name: "Mohammad Abdel-Gawad Rajab Ibrahim", src: men ,desc:'Muhammad Abdel-Gawad Rajab Ibrahim is Team leader ,work on  Machine learning,backend Developer,and supervises on all team members'},
-    { name: "Mohanad Adel Abdulaziz Mohammad", src: men , desc:'Muhannad Adel Abdulaziz Muhammad ,work on Machine Learning ,Flutter ' },
-    { name: "Mohammad Mahmoud Muhammad Mahmoud", src: men,desc:'Muhammad Mahmoud Muhammad Mahmoud,work on Machine Learning , Deep Learning' },
-    { name: "Mohammad AbdelAleem Mustafa AbdelDayem", src: men,desc:"Muhammad AbdelAleem Mustafa AbdelDayem ,work on Machine Learning , Deeep Learning" },
-    { name: "Lamia Fekry Mohammad Ali", src: wamen ,desc:'Lamia Fekry Mohammad Ali ,work on Machine Learning ,frontend ,and ui/ux'},
-    { name: "Nourhan Mahmoud Attia Khalil", src: wamen ,desc:'Nourhan Mahmoud Attia Khalil ,work on Machine Learning ,and Ui/ux' },
+    {
+      name: "Mohammad Abdel-Gawad Rajab Ibrahim",
+      src: men,
+      desc: "Muhammad Abdel-Gawad Rajab Ibrahim is Team leader ,work on  Machine learning,backend Developer,and supervises on all team members",
+    },
+    {
+      name: "Mohanad Adel Abdulaziz Mohammad",
+      src: men,
+      desc: "Muhannad Adel Abdulaziz Muhammad ,work on Machine Learning ,Flutter ",
+    },
+    {
+      name: "Mohammad Mahmoud Muhammad Mahmoud",
+      src: men,
+      desc: "Muhammad Mahmoud Muhammad Mahmoud,work on Machine Learning , Deep Learning",
+    },
+    {
+      name: "Mohammad AbdelAleem Mustafa AbdelDayem",
+      src: men,
+      desc: "Muhammad AbdelAleem Mustafa AbdelDayem ,work on Machine Learning , Deeep Learning",
+    },
+    {
+      name: "Lamia Fekry Mohammad Ali",
+      src: wamen,
+      desc: "Lamia Fekry Mohammad Ali ,work on Machine Learning ,frontend ,and ui/ux",
+    },
+    {
+      name: "Nourhan Mahmoud Attia Khalil",
+      src: wamen,
+      desc: "Nourhan Mahmoud Attia Khalil ,work on Machine Learning ,and Ui/ux",
+    },
   ];
   const [activeIndex, setActiveIndex] = useState(0); // State to track the active slide
   const nextSlide = () => {
@@ -84,73 +108,60 @@ export default function About() {
   };
 
   return (
-    <div className="pt-11">
-{/* <div className="order-1 lg:order-2 w-full h-full mt-0 xl:min-h-[84vh]">
+    <div className="">
+      {/* <div className="order-1 lg:order-2 w-full mt-0 lg:min-h-screen relative lg:-top-32 lg:pt-5">
+        <video
+          ref={videoRef}
+          className="w-[100%] h-[100%] object-cover rounded-md mx-auto"
+          autoPlay
+          loop
+          muted={isMuted}
+          playsInline
+          controls={false}
+        >
+          <source src={video} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        {/* Sound Toggle Button */}
+        {/* <button
+          onClick={toggleMute}
+          className={`absolute  bottom-[8px] md:bottom-[28px] lg:bottom-[155px]  xl:bottom-[56px] right-[8px] md:right-[25px] lg:right-[30px] xl:right-[56px] text-white px-8 lg:px-[50px] xl:px-24 py-2 xl:py-6 rounded-full ${
+            isMuted ? "bg-blue-500" : "bg-neutral-800"
+          }`}
+        >
+          {isMuted ? "Start Video" : " Mute Video"}
+        </button>
+      </div> */} 
+<div className="order-1 lg:order-2 w-full mt-0 lg:min-h-screen relative lg:-top-32 lg:pt-5">
   <video
-    className="w-full h-full object-cover rounded-md mx-auto"
-    autoPlay
-    loop
-    controls={false}
-  >
-    <source src={video} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-</div> */}
-
-{/* <div className="order-1 lg:order-2 w-full h-full mt-0 xl:min-h-[84vh] relative"> */}
-  {/* <video
     ref={videoRef}
     className="w-full h-full object-cover rounded-md mx-auto"
     autoPlay
     loop
     muted={isMuted}
     playsInline
-    controls={false} // Disable default video controls
+    controls={false}
   >
     <source src={video} type="video/mp4" />
     Your browser does not support the video tag.
-    <button
+  </video>
+  {/* Sound Toggle Button */}
+  <button
     onClick={toggleMute}
-    className={`absolute z-50 bottom-[2rem] right-[2rem] text-white px-6 py-3 rounded-full ${isMuted? ' bg-neutral-800':'bg-blue-500'}`}
+    className={`absolute bottom-4  sm:bottom-5 md:bottom-7  lg:bottom-36  xl:bottom-14 right-3 sm:right-5 md:right-6 lg:right-11 xl:right-16 text-white px-4 md:px-8 lg:px-12 xl:px-20 py-2 md:py-3 lg:py-4 xl:py-5 rounded-full ${
+      isMuted ? "bg-blue-500" : "bg-neutral-800"
+    }`}
   >
-    {isMuted? "Mute Video":"Start Video"}
+    {isMuted ? "Start Video" : "Mute Video"}
   </button>
-  </video> */}
-
-  {/* Sound Toggle Button */}
-  {/* <button
-    onClick={toggleMute}
-    className={`absolute bottom-[2rem] right-[2rem] text-white px-6 py-3 rounded-full ${isMuted? ' bg-neutral-800':'bg-blue-500'}`}
-  >
-    {isMuted? "Mute Video":"Start Video"}
-  </button> */}
-{/* </div> */}
-{/* < div className="order-1 lg:order-2 w-full mt-0 xl:min-h-[90vh] relative">
-  <video
-    ref={videoRef}
-    className="w-full h-full object-contain rounded-md mx-auto"
-    autoPlay
-    loop
-    muted={isMuted}
-    playsInline
-    controls={false}
-  >
-    <source src={video} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  {/* Sound Toggle Button */}
-  {/* <button
-    onClick={toggleMute}
-    className={`absolute  bottom-[.5rem] xl:bottom-[3.5rem] right-[.5rem] xl:right-[3.5rem] text-white px-2 xl:px-24 py-2 xl:py-6 rounded-full ${isMuted ? 'bg-blue-500' : 'bg-neutral-800'}`}
-  >
-    {isMuted ? "Start Video" : " Mute Video"}
-  </button> */}
-{/* </div> */}
-
- 
+</div>
 
 
-      <div className="mx-auto mb-6 lg:mb-8  xl:min-h-[84vh]">
+
+
+
+      {/* 2 */}
+      {/* <div className="mx-auto mb-6 lg:mb-8  lg:min-h-screen">
         <div className="flex flex-col lg:flex-row lg:gap-12 justify-center items-center py-11 px-4 lg:px-0">
           <motion.div
             variants={fedIn("left", 0.2)}
@@ -187,33 +198,45 @@ export default function About() {
             />
           </div>
         </div>
+      </div> */}
+      <div className="flex justify-center items-center lg:min-h-screen">
+  <div className="mx-auto mb-6 lg:mb-8 lg:min-h-screen">
+    <div className="flex flex-col lg:flex-row lg:gap-12 justify-center items-center py-11 px-4 lg:px-0">
+      <motion.div
+        variants={fedIn("left", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.2 }}
+        className="order-2 lg:order-1 max-w-xs md:max-w-sm lg:max-w-md tracking-wider"
+      >
+        <h2 className="text-2xl lg:text-4xl my-2 font-bold text-neutral-700">
+          Our Website{`'`}s Goal is
+        </h2>
+        <h2 className="text-2xl lg:text-4xl my-2 font-bold text-neutral-700">
+          How to Use the App for
+        </h2>
+        <span className="block text-2xl lg:text-4xl font-bold my-2 text-blue-500">
+          Autism Detection
+        </span>
+        <p className="text-neutral-500 leading-9">
+          FREE app Autism was launched in 2024 and has been parents and caregivers of children aged 11 to 30 months. It is based on research by the Olga Tennison Autism Research Centre at La Trobe University, Australia.
+        </p>
+      </motion.div>
+
+      <div className="order-1 lg:order-2 lg:w-auto mt-0 lg:ml-5">
+        <img
+          src={img3}
+          alt="About Image"
+          className="w-80 lg:w-96 h-[400px] lg:h-[600px] object-cover rounded-md mx-auto"
+        />
       </div>
-    {/*  */}
-    < div className="order-1 lg:order-2 w-full mt-0 xl:min-h-[90vh] relative">
-  <video
-    ref={videoRef}
-    className="w-[100%] h-[100%] object-cover rounded-md mx-auto"
-    autoPlay
-    loop
-    muted={isMuted}
-    playsInline
-    controls={false}
-  >
-    <source src={video} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  {/* Sound Toggle Button */}
-  <button
-    onClick={toggleMute}
-    className={`absolute  bottom-[.5rem] xl:bottom-[3.5rem] right-[.5rem] xl:right-[3.5rem] text-white px-2 xl:px-24 py-2 xl:py-6 rounded-full ${isMuted ? 'bg-blue-500' : 'bg-neutral-800'}`}
-  >
-    {isMuted ? "Start Video" : " Mute Video"}
-  </button>
+    </div>
+  </div>
 </div>
 
-
+      
       {/* Section 3 */}
-      <div className="mx-auto py-10 lg:px-10  max-w-full min-h-[84vh] bg-gray-50">
+      {/* <div className="mx-auto py-10 lg:px-10  max-w-full min-h-[84vh] bg-gray-50">
         <motion.div
           variants={fedIn("up", 0.2)}
           initial="hidden"
@@ -249,9 +272,143 @@ export default function About() {
             </motion.div>
           ))}
         </div>
-      </div>
+      </div> */}
+      <div className="mx-auto py-10 lg:px-10 max-w-full lg:min-h-screen bg-gray-50 flex flex-col justify-center items-center">
+  <motion.div
+    variants={fedIn("up", 0.2)}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: false, amount: 0.2 }}
+    className="w-full"
+  >
+    <h2 className="text-3xl font-bold text-center mx-1 text-neutral-700">
+      Frequently Asked Questions
+    </h2>
+  </motion.div>
+  <div className="w-full">
+    {faqs.map((faq, index) => (
+      <motion.div
+        variants={fedIn("left", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.2 }}
+        key={index}
+        className="p-7"
+      >
+        <div
+          className="cursor-pointer flex gap-3"
+          onClick={() => openModal(faq)}
+        >
+          <span className="font-bold inline-flex justify-center items-center p-1 w-6 h-6 text-blue-500 rounded-full border-2 border-blue-500 hover:text-white hover:bg-blue-500">
+            ?
+          </span>
+          <h3 className="text-base lg:text-lg font-semibold text-neutral-500 hover:underline hover:text-blue-500">
+            {faq.question}
+          </h3>
+        </div>
+      </motion.div>
+    ))}
+  </div>
+</div>
+
       {/* section 4 */}
-      <div className="mx-auto py-9 xl:min-h-[84vh] w-full md:max-w-screen-xl">
+      <div className="mx-auto py-9 lg:min-h-screen w-full md:max-w-screen-xl flex flex-col justify-center items-center">
+  <div className="text-center">
+    <h2 className="font-bold text-2xl lg:text-4xl tracking-wider pt-6 text-neutral-700">
+      365 Developers
+    </h2>
+  </div>
+
+  <div
+    id="animation-carousel"
+    className="relative w-full max-w-lg md:max-w-screen-md lg:max-w-screen-lg flex flex-col items-center"
+    data-carousel="static"
+  >
+    {/* Carousel wrapper */}
+    <div className="relative w-full h-56 overflow-hidden rounded-lg md:h-96">
+      {peop.map((person, index) => (
+        <div
+          key={index}
+          className={`${
+            index === activeIndex ? "block" : "hidden"
+          } duration-200 ease-linear`}
+          data-carousel-item
+        >
+          <div className="flex flex-col justify-center items-center mt-8 lg:mt-12">
+            <img
+              src={person.src}
+              className="block w-20 h-20 md:w-24 md:h-24 rounded-full"
+              alt={person.name}
+            />
+            <p className="mt-3 text-sm md:text-base text-neutral-500 md:leading-9 text-center max-w-xs md:max-w-lg lg:max-w-xl">
+              {person.desc}
+            </p>
+            <p className="h4 mt-3 md:mt-5 text-sm md:text-lg text-blue-500">
+              {person.name}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* Slider controls */}
+    <button
+      type="button"
+      onClick={prevSlide}
+      className="absolute top-1/2 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none transform -translate-y-1/2"
+      data-carousel-prev
+    >
+      <span className="inline-flex items-center justify-center group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg
+          className="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M5 1 1 5l4 4"
+          />
+        </svg>
+      </span>
+    </button>
+    <button
+      type="button"
+      onClick={nextSlide}
+      className="absolute top-1/2 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none transform -translate-y-1/2"
+      data-carousel-next
+    >
+      <span className="inline-flex items-center justify-center group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+        <svg
+          className="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="m1 9 4-4L1 1"
+          />
+        </svg>
+      </span>
+    </button>
+
+    {/* Additional text */}
+    <div className="text-center text-sm md:text-xl font-bold tracking-wide my-2 text-neutral-500">
+      <h3>Zagazig University</h3>
+      <h3>Computer and Information</h3>
+    </div>
+  </div>
+</div>
+      {/* <div className="mx-auto py-9 xl:min-h-[84vh] w-full md:max-w-screen-xl">
         <div className="text-center">
           <h2 className="font-bold text-2xl lg:text-4xl tracking-wider pt-6 text-neutral-700">
             365 Developers
@@ -263,7 +420,7 @@ export default function About() {
           className="relative min-w-lg"
           data-carousel="static"
         >
-          {/* Carousel wrapper */}
+          Carousel wrapper
           <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
             {peop.map((person, index) => (
               <div
@@ -274,23 +431,23 @@ export default function About() {
                 data-carousel-item
               >
                 <div className="flex flex-col justify-center items-center mt-8 lg:mt-12">
-  <img
-    src={person.src}
-    className="block w-20 h-20 md:w-24 md:h-24 rounded-full"
-    alt={person.name}
-  />
-  <p className="mt-3 text-sm md:text-base text-neutral-500 md:leading-9 text-center max-w-xs md:max-w-lg lg:max-w-xl">
-    {person.desc}
-  </p>
-  <p className=" h4 mt-3 md:mt-5 text-sm md:text-lg  text-blue-500">
-    {person.name}
-  </p>
-</div>
+                  <img
+                    src={person.src}
+                    className="block w-20 h-20 md:w-24 md:h-24 rounded-full"
+                    alt={person.name}
+                  />
+                  <p className="mt-3 text-sm md:text-base text-neutral-500 md:leading-9 text-center max-w-xs md:max-w-lg lg:max-w-xl">
+                    {person.desc}
+                  </p>
+                  <p className=" h4 mt-3 md:mt-5 text-sm md:text-lg  text-blue-500">
+                    {person.name}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
 
-          {/* Slider controls */}
+          Slider controls
           <button
             type="button"
             onClick={prevSlide}
@@ -340,13 +497,13 @@ export default function About() {
             </span>
           </button>
 
-          {/* Additional text */}
+          Additional text
           <div className="text-center text-sm md:text-xl font-bold tracking-wide my-2 text-neutral-500">
             <h3 className=" ">Zagazig University</h3>
             <h3 className="">Computer and Information</h3>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Modal */}
       {isOpen && (

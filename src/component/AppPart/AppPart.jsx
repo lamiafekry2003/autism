@@ -70,7 +70,7 @@ export default function AppPart() {
     //     </motion.div>
     //   </div>
     // </div>
-    <div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center lg:min-h-screen">
   <div className="mx-auto overflow-x-hidden py-7">
     <div className="mx-auto w-fit">
       <motion.div

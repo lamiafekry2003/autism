@@ -60,7 +60,7 @@ export default function ServicePart() {
     //     </div>
     //  </div>
     // </div>
-    <div className="flex justify-center items-center min-h-screen bg-gray-50">
+    <div className="flex justify-center items-center lg:min-h-screen bg-gray-50">
   <div className="mx-auto w-fit">
     <motion.div 
       variants={fedIn('up', 0.2)} 

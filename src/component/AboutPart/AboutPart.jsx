@@ -55,7 +55,7 @@ export default function AboutPart() {
   //     </div>
   //   </div>
   //  </div>
-  <div className="flex justify-center items-center min-h-screen">
+  <div className="flex justify-center items-center lg:min-h-screen">
   <div className="mx-auto overflow-x-hidden">
     <motion.div
       variants={fedIn("up", 0.2)}
