@@ -132,7 +132,7 @@ export default function About() {
           {isMuted ? "Start Video" : " Mute Video"}
         </button>
       </div> */} 
-<div className="order-1 lg:order-2 w-full mt-0 h-[400px] lg:min-h-screen relative lg:-top-32 lg:pt-5">
+<div className="order-1 lg:order-2 w-full mt-0 min-h-[400px] lg:min-h-screen relative lg:-top-32 lg:pt-5">
   <video
     ref={videoRef}
     className="w-full h-full object-cover rounded-md mx-auto"
@@ -148,7 +148,7 @@ export default function About() {
   {/* Sound Toggle Button */}
   <button
     onClick={toggleMute}
-    className={`absolute bottom-3  sm:bottom-5 md:bottom-7  lg:bottom-36  xl:bottom-14 right-3 sm:right-5 md:right-6 lg:right-11 xl:right-16 text-white px-4 md:px-8 lg:px-12 xl:px-20 py-2 md:py-3 lg:py-4 xl:py-5 rounded-full ${
+    className={`absolute bottom-3  sm:bottom-5 md:bottom-7  lg:bottom-36  xl:bottom-14 right-3 sm:right-5 md:right-6 lg:right-11 xl:right-14 text-white px-4 md:px-8 lg:px-12 xl:px-24 py-2 md:py-3 lg:py-4 xl:py-5 rounded-full ${
       isMuted ? "bg-blue-500" : "bg-neutral-800"
     }`}
   >
