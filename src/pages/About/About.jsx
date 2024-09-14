@@ -132,7 +132,7 @@ export default function About() {
           {isMuted ? "Start Video" : " Mute Video"}
         </button>
       </div> */} 
-<div className="order-1 lg:order-2 w-full mt-0 lg:min-h-screen relative lg:-top-32 lg:pt-5">
+<div className="order-1 lg:order-2 w-full mt-0 h-[600px] lg:min-h-screen relative lg:-top-32 lg:pt-5">
   <video
     ref={videoRef}
     className="w-full h-full object-cover rounded-md mx-auto"
