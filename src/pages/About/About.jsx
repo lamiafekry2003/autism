@@ -1,13 +1,25 @@
 import img3 from "../../assets/about.png";
-import { useState } from "react";
+import { useState,useRef } from "react";
 import { motion } from "framer-motion";
 import { fedIn } from "../../variants";
 import men from "../../assets/men.jfif";
 import wamen from "../../assets/wamen.jpg";
 import video from "../../assets/autismDetect (online-video-cutter.com).mp4"
+// import { FaWater } from 'react-icons/fa';  // Importing water drop icon
 export default function About() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedQuestion, setSelectedQuestion] = useState({});
+
+  const [isMuted, setIsMuted] = useState(false);
+  const videoRef = useRef(null);
+
+  const toggleMute = () => {
+    const video = videoRef.current;
+    if (video) {
+      video.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
 
   const peop = [
     { name: "Mohammad Abdel-Gawad Rajab Ibrahim", src: men ,desc:'Muhammad Abdel-Gawad Rajab Ibrahim is Team leader ,work on  Machine learning,backend Developer,and supervises on all team members'},
@@ -73,26 +85,70 @@ export default function About() {
 
   return (
     <div className="pt-11">
-      {/* Section 1 */}
-      {/* <div className="mx-auto py-6 lg:py-10   max-w-full xl:min-h-[84vh]">
-        <div className="flex flex-col justify-center items-center relative">
-          <img
-            src={img}
-            alt="About Background"
-            className="w-full object-cover h-[100vh]"
-          />
-          <h2 className="absolute inset-0 flex justify-center items-center text-center text-3xl lg:text-7xl font-bold text-blue-500 opacity-40">
-            About
-          </h2>
-        </div>
-      </div>
-       */}
-       <div className="order-1 lg:order-2 lg:w-auto mt-0 xl:min-h-[84vh]">
-  <video className="w-md lg:w-full h-[300px] sm:h-[600px] md:h-[500px] lg:h-[600px] xl:h-full object-cover  mx-auto" autoPlay loop  controls>
+{/* <div className="order-1 lg:order-2 w-full h-full mt-0 xl:min-h-[84vh]">
+  <video
+    className="w-full h-full object-cover rounded-md mx-auto"
+    autoPlay
+    loop
+    controls={false}
+  >
     <source src={video} type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-</div>
+</div> */}
+
+{/* <div className="order-1 lg:order-2 w-full h-full mt-0 xl:min-h-[84vh] relative"> */}
+  {/* <video
+    ref={videoRef}
+    className="w-full h-full object-cover rounded-md mx-auto"
+    autoPlay
+    loop
+    muted={isMuted}
+    playsInline
+    controls={false} // Disable default video controls
+  >
+    <source src={video} type="video/mp4" />
+    Your browser does not support the video tag.
+    <button
+    onClick={toggleMute}
+    className={`absolute z-50 bottom-[2rem] right-[2rem] text-white px-6 py-3 rounded-full ${isMuted? ' bg-neutral-800':'bg-blue-500'}`}
+  >
+    {isMuted? "Mute Video":"Start Video"}
+  </button>
+  </video> */}
+
+  {/* Sound Toggle Button */}
+  {/* <button
+    onClick={toggleMute}
+    className={`absolute bottom-[2rem] right-[2rem] text-white px-6 py-3 rounded-full ${isMuted? ' bg-neutral-800':'bg-blue-500'}`}
+  >
+    {isMuted? "Mute Video":"Start Video"}
+  </button> */}
+{/* </div> */}
+{/* < div className="order-1 lg:order-2 w-full mt-0 xl:min-h-[90vh] relative">
+  <video
+    ref={videoRef}
+    className="w-full h-full object-contain rounded-md mx-auto"
+    autoPlay
+    loop
+    muted={isMuted}
+    playsInline
+    controls={false}
+  >
+    <source src={video} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  {/* Sound Toggle Button */}
+  {/* <button
+    onClick={toggleMute}
+    className={`absolute  bottom-[.5rem] xl:bottom-[3.5rem] right-[.5rem] xl:right-[3.5rem] text-white px-2 xl:px-24 py-2 xl:py-6 rounded-full ${isMuted ? 'bg-blue-500' : 'bg-neutral-800'}`}
+  >
+    {isMuted ? "Start Video" : " Mute Video"}
+  </button> */}
+{/* </div> */}
+
+ 
+
 
       <div className="mx-auto mb-6 lg:mb-8  xl:min-h-[84vh]">
         <div className="flex flex-col lg:flex-row lg:gap-12 justify-center items-center py-11 px-4 lg:px-0">
@@ -132,6 +188,29 @@ export default function About() {
           </div>
         </div>
       </div>
+    {/*  */}
+    < div className="order-1 lg:order-2 w-full mt-0 xl:min-h-[90vh] relative">
+  <video
+    ref={videoRef}
+    className="w-full h-[90vh] object-cover rounded-md mx-auto"
+    autoPlay
+    loop
+    muted={isMuted}
+    playsInline
+    controls={false}
+  >
+    <source src={video} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  {/* Sound Toggle Button */}
+  <button
+    onClick={toggleMute}
+    className={`absolute  bottom-[.5rem] xl:bottom-[3.5rem] right-[.5rem] xl:right-[3.5rem] text-white px-2 xl:px-24 py-2 xl:py-6 rounded-full ${isMuted ? 'bg-blue-500' : 'bg-neutral-800'}`}
+  >
+    {isMuted ? "Start Video" : " Mute Video"}
+  </button>
+</div>
+
 
       {/* Section 3 */}
       <div className="mx-auto py-10 lg:px-10  max-w-full min-h-[84vh] bg-gray-50">

@@ -7,7 +7,7 @@ import "./header.scss";
 
 export default function Header() {
   return (
-    <div className="relative overflow-x-hidden sm:overflow-hidden  lg:min-h-[100vh] bg-gray-50 flex justify-center items-center   ">
+    <div className="relative  overflow-x-hidden sm:overflow-hidden  lg:min-h-[100vh] bg-gray-50 flex justify-center items-center   ">
       {/* background pattern */}
       <div className="h-[700px] w-[700px] bg-blue-500 absolute  -top-[40%] right-0 rounded-3xl rotate-45 -z[8] "></div>
       {/* hero section */}
