@@ -192,7 +192,7 @@ export default function About() {
     < div className="order-1 lg:order-2 w-full mt-0 xl:min-h-[90vh] relative">
   <video
     ref={videoRef}
-    className="w-full h-[90vh] object-cover rounded-md mx-auto"
+    className="w-[100%] h-[100%] object-cover rounded-md mx-auto"
     autoPlay
     loop
     muted={isMuted}
