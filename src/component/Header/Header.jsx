@@ -1,4 +1,4 @@
-import img2 from "../../assets/iPhone 15 Pro.png";
+import img2 from "../../assets/iPhone 15 Pro (1).png"
 motion;
 import { motion } from "framer-motion";
 // variants

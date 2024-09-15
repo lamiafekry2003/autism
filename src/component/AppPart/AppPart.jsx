@@ -1,5 +1,5 @@
 
-import img2 from "../../assets/iPhone 15 Pro.png";
+import img2 from "../../assets/iPhone 15 Pro (1).png";
 import logo from "../../assets/logos_google-play-icon.png";
 import { motion } from "framer-motion";
 import { fedIn } from "../../variants";

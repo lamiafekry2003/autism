@@ -1,14 +1,16 @@
 
-import test from "../../assets/iPhone 13 Mockup.png";
-import home from "../../assets/Home.png";
-import camera from "../../assets/camera.png";
+import test from "../../assets/Pixel 8 Pro Mockup Obsidian.png";
+import home from "../../assets/home.png";
+import camera from "../../assets/camara.png";
 import community from "../../assets/community.png";
 import resource from "../../assets/resource.png";
+import result from "../../assets/result.png"
+import qust from "../../assets/quest.png"
 import Slider from "react-slick";
 import { motion } from 'framer-motion';
 import { fedIn } from '../../variants';
 import logo from "../../assets/logos_google-play-icon.png"
-import img2 from "../../assets/iPhone 15 Pro.png"
+import img2 from "../../assets/iPhone 15 Pro (1).png"
 
 export default function Application() {
   const settings = {
@@ -86,8 +88,10 @@ export default function Application() {
     { src: home, alt: "Screenshot 1" },
     { src: test, alt: "Screenshot 2" },
     { src: camera, alt: "Screenshot 3" },
-    { src: community, alt: "Screenshot 4" },
-    { src: resource, alt: "Screenshot 5" },
+    { src: qust, alt: "Screenshot 4" },
+    {src:result ,alt:'Screenshot 5'},
+    { src: community, alt: "Screenshot 6" },
+    { src: resource, alt: "Screenshot 7" },
   ];
 
   return (
