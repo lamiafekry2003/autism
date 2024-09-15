@@ -5,7 +5,6 @@ import { fedIn } from "../../variants";
 import men from "../../assets/men.jfif";
 import wamen from "../../assets/wamen.jpg";
 import video from "../../assets/autismDetect (online-video-cutter.com).mp4";
-// import { FaWater } from 'react-icons/fa';  // Importing water drop icon
 export default function About() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedQuestion, setSelectedQuestion] = useState({});
