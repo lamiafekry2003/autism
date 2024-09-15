@@ -1,6 +1,6 @@
 
 import test from "../../assets/Pixel 8 Pro Mockup Obsidian.png";
-import home from "../../assets/home.png"
+import home from "../../assets/base.png"
 import camera from "../../assets/camara.png";
 import community from "../../assets/community.png";
 import resource from "../../assets/resource.png";
