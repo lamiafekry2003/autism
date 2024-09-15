@@ -92,62 +92,6 @@ export default function Application() {
 
   return (
     <div className="pt-14 overflow-x-hidden">
-       {/* <div className=" mx-auto min-h-[84vh] py-9">
-       <div className="mx-auto w-fit">
-     <motion.div 
-      variants={fedIn('up', 0.2)} 
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.2 }}
-     className="tracking-wider">
-        <h2 className=" text-center font-bold text-2xl lg:text-4xl text-neutral-700">
-          Download App
-        </h2>
-      </motion.div>
-      </div>
-      <div className="flex flex-wrap lg:flex-row justify-center items-center my-4">
-        <motion.div
-          variants={fedIn('left', 0.2)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
-          className="mt-9 mx-auto lg:mx-5 w-fit min-w-80"
-        >
-          <img
-            src={img2}
-            alt="App Preview"
-            className="lg:max-w-md 2xl:max-w-lg h-80 lg:h-[450px] object-cover"
-          />
-        </motion.div>
-        <motion.div
-          variants={fedIn('right', 0.2)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
-          className="max-w-sm lg:max-w-lg ml-4 mt-4 tracking-wider"
-        >
-          <p className="text-xl text-neutral-500 font-bold px-5 lg:px-0">
-            Autism is a free app that empowers parents to assess their young children for early signs of autism
-          </p>
-          <ul className="text-neutral-500 list-disc  my-3 px-5 lg:px-0 leading-6">
-            {features.map((feature, index) => (
-              <li key={index} className="mb-2">
-                {feature}
-              </li>
-            ))}
-          </ul>
-          <div className="px-5 lg:px-0 md:mx-auto">
-          <button className="btn mt-3">
-            <div className="flex justify-between items-center">
-              <img src={logo} alt="Google Play Logo" className="w-4 ml-2" />
-              <span className="btn-text-one">Download</span>
-            </div>
-            <span className="btn-text-two ml-2">By Google Play</span>
-          </button>
-          </div>
-        </motion.div>
-      </div>
-    </div> */}
     <div className="mx-auto lg:min-h-screen py-9 flex flex-col justify-center items-center">
   <div className="text-center w-fit mx-auto ">
     <motion.div 
@@ -206,57 +150,8 @@ export default function Application() {
   </div>
 </div>
 {/*  */}
-      {/* <div className="mx-auto lg:min-h-screen bg-gray-50 py-9">
-        <motion.div 
-          variants={fedIn('left', 0.2)} 
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
-          className="ml-2">
-          <h2 className="lg:ml-20 text-blue-500 px-5 mb-3 font-bold text-2xl lg:text-4xl tracking-wider">
-            Using Autism is easy
-          </h2>
-        </motion.div>
-        <div className="flex flex-col lg:flex-row justify-center items-center lg:ml-24 my-5 px-5">
-          <motion.ul 
-            variants={fedIn('left', 0.2)} 
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.2 }}>
-            {steps.map((step, index) => (
-              <li key={index} className="tracking-wider my-5">
-                <div className="flex flex-col sm:ml-2">
-                  <div className="flex items-center">
-                    <span className="my-3 font-bold inline-flex justify-center items-center w-9 h-9 text-blue-500 rounded-full border-2 border-blue-500 hover:text-white hover:bg-blue-500 cursor-pointer">
-                      {step.number}
-                    </span>
-                    <span className="ml-4 text-blue-500 text-md lg:text-2xl">
-                      {step.title}
-                    </span>
-                  </div>
-                  <span className="text-neutral-500 text-xs lg:text-base ml-14 lg:ml-[58px]">
-                    {step.description}
-                  </span>
-                </div>
-                {index < steps.length - 1 && <hr className="mt-3"/>}
-              </li>
-            ))}
-          </motion.ul>
-          <motion.div 
-            variants={fedIn('right', 0.2)} 
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.2 }}
-            className="flex justify-center items-center mt-9 mx-auto lg:mx-5 w-fit min-w-80">
-            <img
-              src={test}
-              alt="App Preview"
-              className="h-80 lg:h-[350px] object-cover"
-            />
-          </motion.div>
-        </div>
-      </div> */}
-      <div className="mx-auto lg:min-h-screen bg-gray-50 py-9">
+      
+      <div className="mx-auto lg:min-h-screen bg-zinc-100 py-9">
   <motion.div 
     variants={fedIn('left', 0.2)} 
     initial="hidden"

@@ -91,8 +91,10 @@ export default function AboutPart() {
         className="mt-4 sm:mt-0 max-w-fit sm:max-w-lg lg:ml-2 tracking-wider"
       >
         <p className="text-neutral-500 leading-9 mx-2">
-          Autism provides a community for Autism and tests for parents and caregivers of children aged 11 to 30 months. The FREE app Autism was launched in 2024 and has been downloaded 90,000 times.
-          It is based on research by the Olga Tennison Autism Research Centre at La Trobe University, Australia. The early autism detection method used in ASDetect is 83% accurate.
+          Autism provides a community for Autism and tests for parents and caregivers of children aged 11 to 30 months. FREE app Autism was launched in 2024 and has been parents and caregivers of children aged 11 to 30 months. a mobile application
+powered by artificial intelligence to assist newly
+graduated doctors in diagnosing autism in
+children. The early autism detection method used in ASDetect is 98%  accurate.
         </p>
         <div className="mx-auto mt-3">
           <Link to="about">

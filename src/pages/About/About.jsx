@@ -25,32 +25,32 @@ export default function About() {
     {
       name: "Mohammad Abdel-Gawad Rajab Ibrahim",
       src: men,
-      desc: "Muhammad Abdel-Gawad Rajab Ibrahim is Team leader ,work on  Machine learning,backend Developer,and supervises on all team members",
+      desc: " is Team leader ,work on  Machine learning,Deep Learning",
     },
     {
       name: "Mohanad Adel Abdulaziz Mohammad",
       src: men,
-      desc: "Muhannad Adel Abdulaziz Muhammad ,work on Machine Learning ,Flutter ",
+      desc: "work on Machine Learning ,Flutter ",
     },
     {
       name: "Mohammad Mahmoud Muhammad Mahmoud",
       src: men,
-      desc: "Muhammad Mahmoud Muhammad Mahmoud,work on Machine Learning , Deep Learning",
+      desc: "work on Machine Learning , Deep Learning",
     },
     {
       name: "Mohammad AbdelAleem Mustafa AbdelDayem",
       src: men,
-      desc: "Muhammad AbdelAleem Mustafa AbdelDayem ,work on Machine Learning , Deeep Learning",
+      desc: "work on Machine Learning , Deeep Learning",
     },
     {
       name: "Lamia Fekry Mohammad Ali",
       src: wamen,
-      desc: "Lamia Fekry Mohammad Ali ,work on Machine Learning ,frontend ,and ui/ux",
+      desc: "work on frontend ,and ui/ux",
     },
     {
       name: "Nourhan Mahmoud Attia Khalil",
       src: wamen,
-      desc: "Nourhan Mahmoud Attia Khalil ,work on Machine Learning ,and Ui/ux",
+      desc: "work on Machine Learning ,and Ui/ux",
     },
   ];
   const [activeIndex, setActiveIndex] = useState(0); // State to track the active slide
@@ -126,11 +126,11 @@ export default function About() {
   {/* Sound Toggle Button */}
    <button
     onClick={toggleMute}
-    className={`absolute bottom-3  sm:bottom-5 md:bottom-7  lg:bottom-36  xl:bottom-14 right-3 sm:right-5 md:right-6 lg:right-11 xl:right-14 text-white px-4 md:px-8 lg:px-12 xl:px-24 py-2 md:py-3 lg:py-4 xl:py-5 rounded-full ${
+    className={`absolute bottom-3  sm:bottom-5 md:bottom-7  lg:bottom-36  xl:bottom-[58px] right-3 sm:right-5 md:right-6 lg:right-11 xl:right-12 text-white px-4 md:px-8 lg:px-12 xl:px-24 py-2 md:py-3 lg:py-4 xl:py-5 rounded-full ${
       isMuted ? "bg-blue-500" : "bg-neutral-800"
     }`}
   >
-    {isMuted ? "Start Video" : "Mute Video"}
+    {isMuted ? "Un Mute Video" : "Mute Video"}
   </button>
 </div> 
 
@@ -197,7 +197,15 @@ export default function About() {
           Autism Detection
         </span>
         <p className="text-neutral-500 leading-9">
-          FREE app Autism was launched in 2024 and has been parents and caregivers of children aged 11 to 30 months. It is based on research by the Olga Tennison Autism Research Centre at La Trobe University, Australia.
+          FREE app Autism was launched in 2024 and has been parents and caregivers of children aged 11 to 30 months. a mobile application
+powered by artificial intelligence to assist newly
+graduated doctors in diagnosing autism in
+children.The app also provides support for parents and
+offers reliable resources to educate them about
+their children.Additionally, the system facilitates experience
+sharing among doctors and interaction with
+parents through a specialized community.
+
         </p>
       </motion.div>
 
@@ -251,7 +259,7 @@ export default function About() {
           ))}
         </div>
       </div> */}
-      <div className="mx-auto py-10 lg:px-10 max-w-full lg:min-h-screen bg-gray-50 flex flex-col justify-center items-center">
+      <div className="mx-auto py-10 lg:px-10 max-w-full lg:min-h-screen bg-zinc-100 flex flex-col justify-center items-center">
   <motion.div
     variants={fedIn("up", 0.2)}
     initial="hidden"
@@ -293,7 +301,7 @@ export default function About() {
       <div className="mx-auto py-9 lg:min-h-screen w-full md:max-w-screen-xl flex flex-col justify-center items-center">
   <div className="text-center">
     <h2 className="font-bold text-2xl lg:text-4xl tracking-wider pt-6 text-neutral-700">
-      365 Developers
+      365-Develope Team
     </h2>
   </div>
 
@@ -315,7 +323,7 @@ export default function About() {
           <div className="flex flex-col justify-center items-center mt-8 lg:mt-12">
             <img
               src={person.src}
-              className="block w-20 h-20 md:w-24 md:h-24 rounded-full"
+              className="block w-[90px] h-[90px] md:w-24 md:h-24 rounded-full"
               alt={person.name}
             />
             <p className="mt-3 text-sm md:text-base text-neutral-500 md:leading-9 text-center max-w-xs md:max-w-lg lg:max-w-xl">
@@ -382,106 +390,11 @@ export default function About() {
     {/* Additional text */}
     <div className="text-center text-sm md:text-xl font-bold tracking-wide my-2 text-neutral-500">
       <h3>Zagazig University</h3>
-      <h3>Computer and Information</h3>
+      <h3>Faculty of Computer and Information</h3>
     </div>
   </div>
 </div>
-      {/* <div className="mx-auto py-9 xl:min-h-[84vh] w-full md:max-w-screen-xl">
-        <div className="text-center">
-          <h2 className="font-bold text-2xl lg:text-4xl tracking-wider pt-6 text-neutral-700">
-            365 Developers
-          </h2>
-        </div>
-
-        <div
-          id="animation-carousel"
-          className="relative min-w-lg"
-          data-carousel="static"
-        >
-          Carousel wrapper
-          <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-            {peop.map((person, index) => (
-              <div
-                key={index}
-                className={`${
-                  index === activeIndex ? "block" : "hidden"
-                } duration-200 ease-linear`}
-                data-carousel-item
-              >
-                <div className="flex flex-col justify-center items-center mt-8 lg:mt-12">
-                  <img
-                    src={person.src}
-                    className="block w-20 h-20 md:w-24 md:h-24 rounded-full"
-                    alt={person.name}
-                  />
-                  <p className="mt-3 text-sm md:text-base text-neutral-500 md:leading-9 text-center max-w-xs md:max-w-lg lg:max-w-xl">
-                    {person.desc}
-                  </p>
-                  <p className=" h4 mt-3 md:mt-5 text-sm md:text-lg  text-blue-500">
-                    {person.name}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          Slider controls
-          <button
-            type="button"
-            onClick={prevSlide}
-            className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev
-          >
-            <span className="inline-flex items-center justify-center  -ml-2 md:-ml-0  group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-              <svg
-                className="w-4 h-4  text-black dark:text-gray-800 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M5 1 1 5l4 4"
-                />
-              </svg>
-            </span>
-          </button>
-          <button
-            type="button"
-            onClick={nextSlide}
-            className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next
-          >
-            <span className="inline-flex items-center justify-center -mr-2 md:-mr-0      group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-              <svg
-                className="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 6 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="m1 9 4-4L1 1"
-                />
-              </svg>
-            </span>
-          </button>
-
-          Additional text
-          <div className="text-center text-sm md:text-xl font-bold tracking-wide my-2 text-neutral-500">
-            <h3 className=" ">Zagazig University</h3>
-            <h3 className="">Computer and Information</h3>
-          </div>
-        </div>
-      </div> */}
+     
 
       {/* Modal */}
       {isOpen && (

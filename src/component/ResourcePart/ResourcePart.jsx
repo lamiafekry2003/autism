@@ -16,7 +16,7 @@ export default function Resource() {
 
   return (
 
-      <div className="lg:min-h-screen flex flex-col justify-center mx-auto bg-gray-50  overflow-x-hidden sm:overflow-hidden px-4 sm:px-6 lg:px-8">
+      <div className="lg:min-h-screen flex flex-col justify-center mx-auto bg-zinc-100  overflow-x-hidden sm:overflow-hidden px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fedIn('up', 0.2)}
           initial="hidden"

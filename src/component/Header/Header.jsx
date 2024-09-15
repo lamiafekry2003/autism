@@ -7,7 +7,7 @@ import "./header.scss";
 
 export default function Header() {
   return (
-    <div className="relative  overflow-x-hidden sm:overflow-hidden  lg:min-h-[100vh] bg-gray-50 flex justify-center items-center   ">
+    <div className="relative  overflow-x-hidden sm:overflow-hidden  lg:min-h-[100vh] bg-zinc-100 flex justify-center items-center   ">
       {/* background pattern */}
       <div className="h-[700px] w-[700px] bg-blue-500 absolute  -top-[40%] right-0 rounded-3xl rotate-45 -z[8] "></div>
       {/* hero section */}
@@ -29,10 +29,10 @@ export default function Header() {
                 For parents and caregivers of children aged 11 to 30 months, the
                 FREE app
                 <span className="text-blue-500 lg:text-blue-500 sm:lg:text-blue-500 ">
-                  {" "}
-                  Autism{" "}
+                 
+                  Autism.
                 </span>
-                was launched in 2024 and has been downloaded 90,000 times
+                We hope it will be used by the largest possible number of people.
               </p>
 
               <div className=" my-3 lg:my-4 ">

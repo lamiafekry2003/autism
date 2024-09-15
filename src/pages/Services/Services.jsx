@@ -58,7 +58,7 @@ export default function Services() {
         </div>
      </div>
     </div> */}
-    <div className="mx-auto max-w-full lg:min-h-screen bg-gray-50 py-14 flex flex-col items-center justify-center">
+    <div className="mx-auto max-w-full lg:min-h-screen bg-zinc-100 py-14 flex flex-col items-center justify-center">
   <div className="w-full max-w-screen-xl">
     <motion.div
       variants={fedIn('up', 0.2)}
