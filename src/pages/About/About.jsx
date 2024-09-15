@@ -109,30 +109,8 @@ export default function About() {
 
   return (
     <div className="">
-      {/* <div className="order-1 lg:order-2 w-full mt-0 lg:min-h-screen relative lg:-top-32 lg:pt-5">
-        <video
-          ref={videoRef}
-          className="w-[100%] h-[100%] object-cover rounded-md mx-auto"
-          autoPlay
-          loop
-          muted={isMuted}
-          playsInline
-          controls={false}
-        >
-          <source src={video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        {/* Sound Toggle Button */}
-        {/* <button
-          onClick={toggleMute}
-          className={`absolute  bottom-[8px] md:bottom-[28px] lg:bottom-[155px]  xl:bottom-[56px] right-[8px] md:right-[25px] lg:right-[30px] xl:right-[56px] text-white px-8 lg:px-[50px] xl:px-24 py-2 xl:py-6 rounded-full ${
-            isMuted ? "bg-blue-500" : "bg-neutral-800"
-          }`}
-        >
-          {isMuted ? "Start Video" : " Mute Video"}
-        </button>
-      </div> */} 
-<div className="order-1 lg:order-2 w-full mt-0 min-h-[400px] lg:min-h-screen relative lg:-top-32 lg:pt-5">
+      {/* important */}
+<div className="order-1 lg:order-2 w-full mt-0 lg:min-h-screen relative lg:-top-32 lg:pt-5">
   <video
     ref={videoRef}
     className="w-full h-full object-cover rounded-md mx-auto"
@@ -146,7 +124,7 @@ export default function About() {
     Your browser does not support the video tag.
   </video>
   {/* Sound Toggle Button */}
-  <button
+   <button
     onClick={toggleMute}
     className={`absolute bottom-3  sm:bottom-5 md:bottom-7  lg:bottom-36  xl:bottom-14 right-3 sm:right-5 md:right-6 lg:right-11 xl:right-14 text-white px-4 md:px-8 lg:px-12 xl:px-24 py-2 md:py-3 lg:py-4 xl:py-5 rounded-full ${
       isMuted ? "bg-blue-500" : "bg-neutral-800"
@@ -154,7 +132,7 @@ export default function About() {
   >
     {isMuted ? "Start Video" : "Mute Video"}
   </button>
-</div>
+</div> 
 
 
 
