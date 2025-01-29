@@ -67,10 +67,10 @@ export default function Services() {
       viewport={{ once: false, amount: 0.2 }}
       className="tracking-wider text-center"
     >
-      <h2 className="font-bold text-2xl lg:text-4xl text-neutral-700">
+      <h2 className="font-bold text-2xl lg:text-4xl text-neutral-900">
         Services
       </h2>
-      <p className="text-neutral-500 my-5 mx-2 lg:mx-0">
+      <p className="text-neutral-700 my-5 mx-2 lg:mx-0">
         We provide quality behavioral services based on the principles of
         Applied Behavior Analysis (ABA). Behavioral Services are provided to
         children and adults with:
@@ -89,7 +89,7 @@ export default function Services() {
           <div className="flex justify-center items-center w-10 h-10 border-2 border-green-600 rounded-full mb-4">
             <i className="fa-solid fa-check text-green-500 text-2xl"></i>
           </div>
-          <p className="text-neutral-500">{service.text}</p>
+          <p className="text-neutral-700">{service.text}</p>
         </motion.div>
       ))}
     </div>
@@ -139,14 +139,14 @@ export default function Services() {
           viewport={{ once: false, amount: 0.2 }}
           className="flex flex-col justify-center items-center bg-white shadow-2xl w-72 h-[150px] rounded-md text-center hover:shadow-lg transition-shadow"
         >
-          <p className="text-neutral-700">{service.title}</p>
+          <p className="text-neutral-900">{service.title}</p>
         </motion.div>
         <motion.p
           variants={fedIn('left', 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.2 }}
-          className="text-neutral-500 max-w-xs lg:max-w-[40%] mt-4"
+          className="text-neutral-700 max-w-xs lg:max-w-[40%] mt-4"
         >
           {service.description}
         </motion.p>

@@ -23,8 +23,8 @@ export default function Resource() {
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
           className="tracking-wider">
-          <h2 className="text-center font-bold text-2xl lg:text-4xl mt-5 text-neutral-700">Resource</h2>
-          <p className="text-neutral-500 mt-5 text-center mx-4 sm:mx-8 lg:mx-0">
+          <h2 className="text-center font-bold text-2xl lg:text-4xl mt-5 text-neutral-900">Resource</h2>
+          <p className="text-neutral-700 mt-5 text-center mx-4 sm:mx-8 lg:mx-0">
             Resource provides us with links to international websites that talk about autism in children, its causes, and other things.
           </p>
         </motion.div>
@@ -51,9 +51,9 @@ export default function Resource() {
                       <div className="border-2 rounded-[50%] p-2 border-blue-500">
                       {resource?.favicon ?<img src={resource?.favicon} alt="" className=" max-w-7 max-h-7 object-cover" />:<img src={img} alt="" className=" max-w-7 max-h-7 object-cover" />}
                       </div>
-                      <h2 className="text-2xl font-semibold line-clamp-2 overflow-hidden text-ellipsis text-neutral-700">{resource.title}</h2>
+                      <h2 className="text-2xl font-semibold line-clamp-2 overflow-hidden text-ellipsis text-neutral-900">{resource.title}</h2>
                     </div>
-                    <p className="text-neutral-500 mt-4 mb-4">{resource.snippet}</p>
+                    <p className="text-neutral-700 mt-4 mb-4">{resource.snippet}</p>
                     <a
                       href={resource.link}
                       className="inline-block text-blue-500 hover:text-blue-700 font-semibold"

@@ -1,20 +1,38 @@
 import { useState } from "react";
 import img1 from "../../assets/logo (2).png";
 import {Link, NavLink } from "react-router-dom";
+import { useEffect } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    // return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleLinkClick = () => {
     setIsOpen(false); // Close the navbar when a link is clicked
   };
   return (
-    <nav className="bg-white  w-full fixed z-40">
+    <nav className={`fixed w-full z-40 transition-all duration-300 ${
+      isScrolled ? "bg-white bg-opacity-100 shadow-md" : "bg-white bg-opacity-60"
+    }`}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img src={img1} className="h-8" alt="Autism Logo" />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap text-neutral-700">
+          <span className="self-center text-2xl font-semibold whitespace-nowrap text-neutral-900">
             Autism
           </span>
         </Link>
@@ -22,7 +40,7 @@ export default function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
           data-collapse-toggle="navbar-default"
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10   justify-center text-sm text-neutral-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="inline-flex items-center p-2 w-10 h-10   justify-center text-sm text-neutral-900 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-default"
           aria-expanded="false"
         >
@@ -47,15 +65,15 @@ export default function Navbar() {
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col text-neutral-500 p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+          <ul className="font-medium flex flex-col text-neutral-900 p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
             <li>
               <NavLink
                 to="/"
                 onClick={handleLinkClick}
                 className={({ isActive }) =>
                   isActive
-                    ? "block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0"
-                    : "block py-2 px-3 text-neutral-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                    ? "block py-1 px-4 text-white bg-blue-500 rounded"
+                    : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
                 }
               >
                 Home
@@ -67,8 +85,8 @@ export default function Navbar() {
                 onClick={handleLinkClick}
                 className={({ isActive }) =>
                   isActive
-                    ? "block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0"
-                    : "block py-2 px-3 text-neutral-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                    ? "block py-1 px-4 text-white bg-blue-500 rounded"
+                    : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
                 }
               >
                 About
@@ -80,8 +98,8 @@ export default function Navbar() {
                 onClick={handleLinkClick}
                 className={({ isActive }) =>
                   isActive
-                    ? "block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0 "
-                    : "block py-2 px-3 text-neutral-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
+                    ? "block py-1 px-4 text-white bg-blue-500 rounded "
+                    : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
                 }
               >
                 Services
@@ -93,8 +111,8 @@ export default function Navbar() {
                 onClick={handleLinkClick}
                 className={({ isActive }) =>
                   isActive
-                    ? "block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0 "
-                    : "block py-2 px-3 text-neutral-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
+                    ? "block py-1 px-4 text-white bg-blue-500 rounded "
+                    : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
                 }
               >
                 App
@@ -106,8 +124,8 @@ export default function Navbar() {
                 onClick={handleLinkClick}
                 className={({ isActive }) =>
                   isActive
-                    ? "block py-2 px-3 text-white bg-blue-500 rounded md:bg-transparent md:text-blue-500 md:p-0 dark:text-white md:dark:text-blue-500"
-                    : "block py-2 px-3 text-neutral-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
+                    ? "block py-1 px-4 text-white bg-blue-500 rounded"
+                    : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
                 }
               >
                 Resource

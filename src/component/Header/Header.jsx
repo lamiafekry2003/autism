@@ -22,10 +22,10 @@ export default function Header() {
               viewport={{ once: false, amount: 0.7 }}
               className="flex flex-col justify-center mx-4 sm:mx-20 gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative z-10"
             >
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-neutral-700">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-neutral-900">
                 Autism Detection
               </h1>
-              <p className="text-sm max-w-full lg:max-w-lg my-4  lg:text-neutral-500 sm:text-neutral-500">
+              <p className="text-sm max-w-full lg:max-w-lg my-4  lg:text-neutral-700 sm:text-neutral-700">
                 For parents and caregivers of children aged 11 to 30 months, the
                 FREE app
                 <span className="text-blue-500 lg:text-blue-500 sm:lg:text-blue-500 ">

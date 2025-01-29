@@ -186,16 +186,16 @@ export default function About() {
         viewport={{ once: false, amount: 0.2 }}
         className="order-2 lg:order-1 max-w-xs md:max-w-sm lg:max-w-md tracking-wider"
       >
-        <h2 className="text-2xl lg:text-4xl my-2 font-bold text-neutral-700">
+        <h2 className="text-2xl lg:text-4xl my-2 font-bold text-neutral-900">
           Our Website{`'`}s Goal is
         </h2>
-        <h2 className="text-2xl lg:text-4xl my-2 font-bold text-neutral-700">
+        <h2 className="text-2xl lg:text-4xl my-2 font-bold text-neutral-900">
           How to Use the App for
         </h2>
         <span className="block text-2xl lg:text-4xl font-bold my-2 text-blue-500">
           Autism Detection
         </span>
-        <p className="text-neutral-500 leading-9">
+        <p className="text-neutral-700 leading-9">
           FREE app Autism was launched in 2024 and has been parents and caregivers of children aged 11 to 30 months. a mobile application
 powered by artificial intelligence to assist newly
 graduated doctors in diagnosing autism in
@@ -266,7 +266,7 @@ parents through a specialized community.
     viewport={{ once: false, amount: 0.2 }}
     className="w-full"
   >
-    <h2 className="text-3xl font-bold text-center mx-1 text-neutral-700">
+    <h2 className="text-3xl font-bold text-center mx-1 text-neutral-900">
       Frequently Asked Questions
     </h2>
   </motion.div>
@@ -287,7 +287,7 @@ parents through a specialized community.
           <span className="font-bold inline-flex justify-center items-center p-1 w-6 h-6 text-blue-500 rounded-full border-2 border-blue-500 hover:text-white hover:bg-blue-500">
             ?
           </span>
-          <h3 className="text-base lg:text-lg font-semibold text-neutral-500 hover:underline hover:text-blue-500">
+          <h3 className="text-base lg:text-lg font-semibold text-neutral-700 hover:underline hover:text-blue-500">
             {faq.question}
           </h3>
         </div>
@@ -299,7 +299,7 @@ parents through a specialized community.
       {/* section 4 */}
       <div className="mx-auto py-9 lg:min-h-screen w-full md:max-w-screen-xl flex flex-col justify-center items-center">
   <div className="text-center">
-    <h2 className="font-bold text-2xl lg:text-4xl tracking-wider pt-6 text-neutral-700">
+    <h2 className="font-bold text-2xl lg:text-4xl tracking-wider pt-6 text-neutral-900">
       365-Develope Team
     </h2>
   </div>
@@ -325,7 +325,7 @@ parents through a specialized community.
               className="block w-[90px] h-[90px] md:w-24 md:h-24 rounded-full"
               alt={person.name}
             />
-            <p className="mt-3 text-sm md:text-base text-neutral-500 md:leading-9 text-center max-w-xs md:max-w-lg lg:max-w-xl">
+            <p className="mt-3 text-sm md:text-base text-neutral-700 md:leading-9 text-center max-w-xs md:max-w-lg lg:max-w-xl">
               {person.desc}
             </p>
             <p className="h4 mt-3 md:mt-5 text-sm md:text-lg text-blue-500">
@@ -387,7 +387,7 @@ parents through a specialized community.
     </button>
 
     {/* Additional text */}
-    <div className="text-center text-sm md:text-xl font-bold tracking-wide my-2 text-neutral-500">
+    <div className="text-center text-sm md:text-xl font-bold tracking-wide my-2 text-neutral-700">
       <h3>Zagazig University</h3>
       <h3>Faculty of Computer and Information</h3>
     </div>
@@ -403,7 +403,7 @@ parents through a specialized community.
               {selectedQuestion.question}
             </h3>
             <hr />
-            <p className="text-neutral-500">{selectedQuestion.answer}</p>
+            <p className="text-neutral-700">{selectedQuestion.answer}</p>
             <button
               onClick={closeModal}
               className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
