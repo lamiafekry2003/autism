@@ -1,30 +1,15 @@
 import { useState } from "react";
 import img1 from "../../assets/logo (2).png";
 import {Link, NavLink } from "react-router-dom";
-import { useEffect } from "react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    // return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  
   const handleLinkClick = () => {
     setIsOpen(false); // Close the navbar when a link is clicked
   };
   return (
     <nav className={`fixed w-full z-40 transition-all duration-300 ${
-      isScrolled ? "bg-white bg-opacity-100 shadow-md" : "bg-white bg-opacity-60"
+       "bg-white bg-opacity-20 backdrop-filter backdrop-blur-md"
     }`}>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
