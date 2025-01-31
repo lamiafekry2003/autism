@@ -1,5 +1,5 @@
 import { useState } from "react";
-import img1 from "../../assets/logo (2).png";
+import img1 from '../../assets/logo.png';
 import {Link, NavLink } from "react-router-dom";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,8 +57,8 @@ export default function Navbar() {
                 onClick={handleLinkClick}
                 className={({ isActive }) =>
                   isActive
-                    ? "block py-1 px-4 text-white bg-blue-500 rounded"
-                    : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                    ? "block py-1 px-4 text-white bg-blue-500 rounded  "
+                    : "block py-1 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
                 }
               >
                 Home
@@ -71,7 +71,7 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   isActive
                     ? "block py-1 px-4 text-white bg-blue-500 rounded"
-                    : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
+                    : "block pt-1 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0"
                 }
               >
                 About
@@ -84,7 +84,7 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   isActive
                     ? "block py-1 px-4 text-white bg-blue-500 rounded "
-                    : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
+                    : "block py-1 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
                 }
               >
                 Services
@@ -97,7 +97,7 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   isActive
                     ? "block py-1 px-4 text-white bg-blue-500 rounded "
-                    : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
+                    : "block py-1 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
                 }
               >
                 App
@@ -110,7 +110,7 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   isActive
                     ? "block py-1 px-4 text-white bg-blue-500 rounded"
-                    : "block py-2 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
+                    : "block py-1 px-3 text-neutral-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-500 md:p-0 "
                 }
               >
                 Resource

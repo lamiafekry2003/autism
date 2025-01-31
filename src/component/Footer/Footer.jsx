@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo (2).png"
+import logo from "../../assets/logo.png"
 export default function Footer() {
   return (
     <div className="max-w-full py-4 lg:py-10 min-h-[200px] bg-blue-500 ">

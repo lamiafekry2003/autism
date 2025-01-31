@@ -11,6 +11,7 @@ import { motion } from 'framer-motion';
 import { fedIn } from '../../variants';
 import logo from "../../assets/logos_google-play-icon.png"
 import img2 from "../../assets/iPhone 15 Pro (1).png"
+import { Helmet } from "react-helmet";
 
 export default function Application() {
   const settings = {
@@ -95,8 +96,12 @@ export default function Application() {
   ];
 
   return (
-    <div className="pt-14 overflow-x-hidden">
-    <div className="mx-auto lg:min-h-screen py-9 flex flex-col justify-center items-center">
+    <div className="pt-12 overflow-x-hidden">
+      <Helmet>
+        <title>AutismDetect/App</title>
+        <meta name="description" content="Autism App" />
+      </Helmet>
+    <div className="mx-auto lg:min-h-screen py-7 flex flex-col justify-center items-center">
   <div className="text-center w-fit mx-auto ">
     <motion.div 
       variants={fedIn('up', 0.2)} 
@@ -110,7 +115,7 @@ export default function Application() {
       </h2>
     </motion.div>
   </div>
-  <div className="flex flex-col lg:flex-row justify-center items-center my-4">
+  <div className="flex flex-col lg:flex-row justify-center items-center my-5">
     <motion.div
       variants={fedIn('left', 0.2)}
       initial="hidden"
@@ -129,7 +134,7 @@ export default function Application() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
-      className="max-w-sm lg:max-w-lg mx-4 tracking-wider"
+      className="max-w-sm lg:max-w-lg mx-4 mt-3 tracking-wider"
     >
       <p className="text-xl text-neutral-700 font-bold px-5 lg:px-0">
         Autism is a free app that empowers parents to assess their young children for early signs of autism.

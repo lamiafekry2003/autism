@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { fedIn } from '../../variants';
 import Loading from '../../component/Loading';
 import { Link } from 'react-router-dom';
-import img from "../../assets/logo (2).png"
+import img from "../../assets/logo.png"
 
 export default function Resource() {
 

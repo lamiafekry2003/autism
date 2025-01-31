@@ -5,6 +5,7 @@ import { fedIn } from "../../variants";
 import men from "../../assets/men.jfif";
 import wamen from "../../assets/wamen.jpg";
 import video from "../../assets/autismDetect (online-video-cutter.com).mp4";
+import { Helmet } from "react-helmet";
 export default function About() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedQuestion, setSelectedQuestion] = useState({});
@@ -108,6 +109,10 @@ export default function About() {
 
   return (
     <div className="">
+      <Helmet>
+        <title>AutismDetect/About</title>
+        <meta name="description" content="Autism App" />
+      </Helmet>
       {/* important */}
 <div className="order-1 lg:order-2 w-full mt-0 lg:min-h-screen relative lg:-top-32 lg:pt-5">
   <video

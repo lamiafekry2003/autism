@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 // variants
 import {fedIn} from '../../variants'
+import { Helmet } from 'react-helmet';
 export default function Services() {
   const services = [
     { id: 1, text: "Autism Spectrum Disorder" },
@@ -22,6 +23,10 @@ export default function Services() {
   ];
   return (
     <div className=" pt-11">
+      <Helmet>
+        <title>AutismDetect/Services</title>
+        <meta name="description" content="Autism App" />
+      </Helmet>
     <div className="mx-auto max-w-full lg:min-h-screen bg-zinc-100 py-14 flex flex-col items-center justify-center">
   <div className="w-full max-w-screen-xl">
     <motion.div

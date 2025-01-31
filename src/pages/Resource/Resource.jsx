@@ -7,7 +7,8 @@ import { motion } from 'framer-motion';
 // variants
 import { fedIn } from '../../variants';
 import Loading from '../../component/Loading';
-import img from '../../assets/logo (2).png';
+import img from '../../assets/logo.png';
+import { Helmet } from 'react-helmet';
 
 export default function Resource() {
   const [page, setPage] = useState(1); // Simulate different pages
@@ -25,6 +26,10 @@ export default function Resource() {
 
   return (
     <div className="pt-11">
+      <Helmet>
+        <title>AutismDetect/Resource</title>
+        <meta name="description" content="Autism App" />
+      </Helmet>
       <div className="mx-auto lg:min-h-screen bg-zinc-100 py-9">
         <motion.div
           variants={fedIn('up', 0.2)}
