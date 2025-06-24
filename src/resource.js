@@ -3,13 +3,13 @@ import { useQuery } from "react-query";
 
 
  export function getResource(){
-   return axios.get(`http://localhost:3000/resource/showAllWebsites?number=6`)
+   return axios.get(`https://autism-app.onrender.com/api/v1/resource/showAllWebsites?number=6`)
 }
 // export function getResourcePagination(queryData){
 //   return axios.get(`https://autism-app.onrender.com/api/v1/resource/showAllWebsites?page=${queryData.queryKey[1]}`)
 // }
 export function getResourcePagination() {
-  return axios.get(`http://localhost:3000/resource/showAllWebsites?number=9`);
+  return axios.get(`https://autism-app.onrender.com/api/v1/resource/showAllWebsites?number=9`);
 }
 
 
